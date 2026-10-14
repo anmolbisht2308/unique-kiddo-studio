@@ -1,0 +1,32 @@
+{
+  "id": "ep002",
+  "format": "shadow",
+  "series": "Guess with Kiddo",
+  "title_screen": ["GUESS THE", "ANIMAL!"],
+  "round_word": "SHADOW",
+  "intro": [
+    "Hello, little friends! I'm Kiddo!",
+    "Today, let's play a shadow game!",
+    "Look at the shadow, and guess the animal. Ready?"
+  ],
+  "items": [
+    {"name": "Elephant", "say": "an elephant", "emoji": "🐘", "hint": "It has a long, long trunk!", "fact": "Elephants are big and strong!"},
+    {"name": "Giraffe", "say": "a giraffe", "emoji": "🦒", "hint": "It has a very long neck!", "fact": "Giraffes are very, very tall!"},
+    {"name": "Rabbit", "say": "a rabbit", "emoji": "🐇", "hint": "It has long ears and goes hop, hop!", "fact": "Rabbits love to eat carrots!"},
+    {"name": "Turtle", "say": "a turtle", "emoji": "🐢", "hint": "It carries its house on its back!", "fact": "Turtles walk slowly, slowly!"},
+    {"name": "Butterfly", "say": "a butterfly", "emoji": "🦋", "hint": "It has pretty wings and flies from flower to flower!", "fact": "Butterflies have colorful wings!"},
+    {"name": "Rooster", "say": "a rooster", "emoji": "🐓", "hint": "It says cock-a-doodle-doo in the morning!", "fact": "Roosters wake us up in the morning!"},
+    {"name": "Fish", "say": "a fish", "emoji": "🐟", "hint": "It swims in the water!", "fact": "Fish live in the water!"},
+    {"name": "Cat", "say": "a cat", "emoji": "🐈", "hint": "It says meow, meow!", "fact": "Cats love to sleep and play!"}
+  ],
+  "outro_screen": "Great job, friends!\nWhich animal is\nYOUR favourite?",
+  "outro": [
+    "Wow! Great job, friends! You guessed all the animals!",
+    "Which animal is your favourite?"
+  ],
+  "seo": {
+    "title": "Guess the Animal by its Shadow! 🐘🦒 Shadow Game for Kids | Learn Animal Names | Unique Kiddo",
+    "description": "Can your little one guess the animal from its shadow? 🤔 Play along with Kiddo! Look at the shadow, listen to the clue, think, and shout the answer!\n\nIn this fun learning game for kids, children learn 8 animal names:\n🐘 Elephant\n🦒 Giraffe\n🐇 Rabbit\n🐢 Turtle\n🦋 Butterfly\n🐓 Rooster\n🐟 Fish\n🐈 Cat\n\nEach round has think time so kids can guess, and a \"say it with me\" pause to practise new English words. Great for toddlers, preschool and kindergarten (ages 2–6).\n\n⭐ Subscribe to Unique Kiddo for more fun learning games: colours, numbers, fruits, vehicles and more!\n\nVoice: Kokoro TTS (Apache 2.0) · Emoji art: Noto Emoji (Apache 2.0)\n\n#animalsforkids #shadowgame #kidslearning",
+    "tags": ["guess the animal", "animal shadow game", "shadow game for kids", "animals for kids", "animal names for kids", "learn animals", "guessing game for kids", "kids learning videos", "preschool learning", "toddler learning", "learn english for kids", "educational videos for kids", "unique kiddo", "kiddo"]
+  }
+}
