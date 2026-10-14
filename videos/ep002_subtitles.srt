@@ -1,0 +1,184 @@
+1
+00:00:01,000 --> 00:00:02,945
+Hello, little friends! I'm Kiddo!
+
+2
+00:00:03,345 --> 00:00:05,209
+Today, let's play a shadow game!
+
+3
+00:00:05,609 --> 00:00:08,344
+Look at the shadow, and guess the animal. Ready?
+
+4
+00:00:10,244 --> 00:00:12,261
+Whose shadow is this? Can you guess?
+
+5
+00:00:12,661 --> 00:00:14,267
+It has a long, long trunk!
+
+6
+00:00:20,067 --> 00:00:21,491
+Yes! It's an elephant!
+
+7
+00:00:21,991 --> 00:00:23,613
+Say it with me! Elephant!
+
+8
+00:00:25,413 --> 00:00:26,976
+Elephants are big and strong!
+
+9
+00:00:29,076 --> 00:00:31,094
+Whose shadow is this? Can you guess?
+
+10
+00:00:31,494 --> 00:00:32,851
+It has a very long neck!
+
+11
+00:00:38,651 --> 00:00:40,112
+Yes! It's a giraffe!
+
+12
+00:00:40,612 --> 00:00:42,242
+Say it with me! Giraffe!
+
+13
+00:00:44,042 --> 00:00:45,771
+Giraffes are very, very tall!
+
+14
+00:00:47,871 --> 00:00:49,889
+Whose shadow is this? Can you guess?
+
+15
+00:00:50,289 --> 00:00:52,576
+It has long ears and goes hop, hop!
+
+16
+00:00:58,376 --> 00:00:59,668
+Yes! It's a rabbit!
+
+17
+00:01:00,168 --> 00:01:01,640
+Say it with me! Rabbit!
+
+18
+00:01:03,440 --> 00:01:05,065
+Rabbits love to eat carrots!
+
+19
+00:01:07,165 --> 00:01:09,182
+Whose shadow is this? Can you guess?
+
+20
+00:01:09,582 --> 00:01:11,178
+It carries its house on its back!
+
+21
+00:01:16,978 --> 00:01:18,319
+Yes! It's a turtle!
+
+22
+00:01:18,819 --> 00:01:20,308
+Say it with me! Turtle!
+
+23
+00:01:22,108 --> 00:01:23,911
+Turtles walk slowly, slowly!
+
+24
+00:01:26,011 --> 00:01:28,028
+Whose shadow is this? Can you guess?
+
+25
+00:01:28,428 --> 00:01:31,374
+It has pretty wings and flies from flower to flower!
+
+26
+00:01:37,174 --> 00:01:38,680
+Yes! It's a butterfly!
+
+27
+00:01:39,180 --> 00:01:40,938
+Say it with me! Butterfly!
+
+28
+00:01:42,738 --> 00:01:44,615
+Butterflies have colorful wings!
+
+29
+00:01:46,715 --> 00:01:48,732
+Whose shadow is this? Can you guess?
+
+30
+00:01:49,132 --> 00:01:51,062
+It says cock-a-doodle-doo in the morning!
+
+31
+00:01:56,862 --> 00:01:58,221
+Yes! It's a rooster!
+
+32
+00:01:58,721 --> 00:02:00,288
+Say it with me! Rooster!
+
+33
+00:02:02,088 --> 00:02:03,904
+Roosters wake us up in the morning!
+
+34
+00:02:06,004 --> 00:02:08,021
+Whose shadow is this? Can you guess?
+
+35
+00:02:08,421 --> 00:02:09,734
+It swims in the water!
+
+36
+00:02:15,534 --> 00:02:16,760
+Yes! It's a fish!
+
+37
+00:02:17,260 --> 00:02:18,643
+Say it with me! Fish!
+
+38
+00:02:20,443 --> 00:02:21,708
+Fish live in the water!
+
+39
+00:02:23,808 --> 00:02:25,826
+Whose shadow is this? Can you guess?
+
+40
+00:02:26,226 --> 00:02:27,471
+It says meow, meow!
+
+41
+00:02:33,271 --> 00:02:34,552
+Yes! It's a cat!
+
+42
+00:02:35,052 --> 00:02:36,447
+Say it with me! Cat!
+
+43
+00:02:38,247 --> 00:02:39,788
+Cats love to sleep and play!
+
+44
+00:02:41,588 --> 00:02:44,790
+Wow! Great job, friends! You guessed all the animals!
+
+45
+00:02:45,290 --> 00:02:46,993
+Which animal is your favourite?
+
+46
+00:02:47,993 --> 00:02:49,626
+Bye bye! See you next time!
+
