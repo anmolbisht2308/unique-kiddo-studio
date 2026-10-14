@@ -21,7 +21,9 @@
       "topic": "Guess the Animal by its Shadow",
       "format": "shadow",
       "keyword": "animal shadow game",
-      "status": "rendered"
+      "status": "scheduled",
+      "scheduled_for": "2026-10-15T16:00+05:30",
+      "metricool_uuid": "5931635678831266372"
     },
     {
       "n": 3,
