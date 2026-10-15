@@ -1,0 +1,146 @@
+{
+  "id": "ep006",
+  "format": "clues",
+  "series": "Guess with Kiddo",
+  "title_screen": [
+    "WHO LIVES",
+    "HERE?"
+  ],
+  "round_word": "HOME",
+  "intro": [
+    "Hello, little friends! I'm Kiddo!",
+    "Look at the clues, and guess who lives there. Ready?"
+  ],
+  "items": [
+    {
+      "name": "Bird",
+      "say": "a bird",
+      "emoji": "🐦",
+      "clues": [
+        "🪺",
+        "🌳"
+      ],
+      "clue_text": "A cozy nest, high up in a tree",
+      "ask": "Who lives here?",
+      "reveal_line": "Yes! A bird lives in a nest!",
+      "fact": "Birds build nests with twigs and leaves!"
+    },
+    {
+      "name": "Bee",
+      "say": "a bee",
+      "emoji": "🐝",
+      "clues": [
+        "🍯",
+        "🌼"
+      ],
+      "clue_text": "Sweet honey and pretty flowers",
+      "ask": "Who lives here?",
+      "reveal_line": "Yes! A bee lives in a hive!",
+      "fact": "Bees go buzz, buzz, from flower to flower!"
+    },
+    {
+      "name": "Fish",
+      "say": "a fish",
+      "emoji": "🐠",
+      "clues": [
+        "🌊",
+        "🪸"
+      ],
+      "clue_text": "Big blue waves and colourful coral",
+      "ask": "Who lives here?",
+      "reveal_line": "Yes! A fish lives in the sea!",
+      "fact": "Fish swim, swim, swim all day!"
+    },
+    {
+      "name": "Dog",
+      "say": "a dog",
+      "emoji": "🐕",
+      "clues": [
+        "🏠",
+        "🦴"
+      ],
+      "clue_text": "A little house and a yummy bone",
+      "ask": "Who lives here?",
+      "reveal_line": "Yes! A dog lives in a kennel!",
+      "fact": "Dogs love to run and wag their tails!"
+    },
+    {
+      "name": "Polar Bear",
+      "say": "a polar bear",
+      "emoji": "🐻‍❄️",
+      "clues": [
+        "🧊",
+        "❄️"
+      ],
+      "clue_text": "Cold, cold ice and fluffy snow",
+      "ask": "Who lives here?",
+      "reveal_line": "Yes! A polar bear lives on the snow and ice!",
+      "fact": "Polar bears have thick white fur to stay warm!"
+    },
+    {
+      "name": "Camel",
+      "say": "a camel",
+      "emoji": "🐫",
+      "clues": [
+        "🏜️",
+        "☀️"
+      ],
+      "clue_text": "Lots of sand and a hot, hot sun",
+      "ask": "Who lives here?",
+      "reveal_line": "Yes! A camel lives in the desert!",
+      "fact": "Camels can walk a long, long way!"
+    },
+    {
+      "name": "Frog",
+      "say": "a frog",
+      "emoji": "🐸",
+      "clues": [
+        "🪷",
+        "💧"
+      ],
+      "clue_text": "A floating flower and lots of water",
+      "ask": "Who lives here?",
+      "reveal_line": "Yes! A frog lives in a pond!",
+      "fact": "Frogs jump, jump, jump!"
+    },
+    {
+      "name": "Monkey",
+      "say": "a monkey",
+      "emoji": "🐒",
+      "clues": [
+        "🌴",
+        "🍌"
+      ],
+      "clue_text": "Tall green trees and yummy bananas",
+      "ask": "Who lives here?",
+      "reveal_line": "Yes! A monkey lives in the jungle!",
+      "fact": "Monkeys love to swing from tree to tree!"
+    }
+  ],
+  "outro_screen": "Great job, friends!\nWhich animal home\ndo YOU like best?",
+  "outro": [
+    "Wow! Great job, friends! You found every animal home!",
+    "Which animal home do you like best?"
+  ],
+  "seo": {
+    "title": "Who Lives Here? 🏠🐝 Animal Homes for Kids | Guessing Game for Kids | Unique Kiddo",
+    "description": "Who lives in a nest? Who lives in a hive? 🤔 Play the animal homes guessing game with Kiddo! Look at the two clues, think, and shout out the animal!\n\nA fun learning video for kids about animals and where they live. Children learn 8 animals and their homes:\n🐦 Bird – nest\n🐝 Bee – hive\n🐠 Fish – sea\n🐕 Dog – kennel\n🐻‍❄️ Polar Bear – snow and ice\n🐫 Camel – desert\n🐸 Frog – pond\n🐒 Monkey – jungle\n\nEach round has think time so kids can guess, and a \"say it with me\" pause to practise new English words. Great for toddlers, preschool and kindergarten (ages 2–6).\n\n⭐ Subscribe to Unique Kiddo for more fun learning games: colours, numbers, fruits, vehicles and more!\n\nVoice: Kokoro TTS (Apache 2.0) · Emoji art: Noto Emoji (Apache 2.0)\n\n#animalhomes #guessinggame #kidslearning",
+    "tags": [
+      "animal homes for kids",
+      "who lives here",
+      "animals and their homes",
+      "where do animals live",
+      "guessing game for kids",
+      "guess the animal",
+      "animals for kids",
+      "animal names for kids",
+      "kids learning videos",
+      "preschool learning",
+      "toddler learning",
+      "learn english for kids",
+      "educational videos for kids",
+      "unique kiddo",
+      "kiddo"
+    ]
+  }
+}

@@ -1,0 +1,180 @@
+1
+00:00:01,000 --> 00:00:02,945
+Hello, little friends! I'm Kiddo!
+
+2
+00:00:03,345 --> 00:00:06,097
+Look at the clues, and guess who lives there. Ready?
+
+3
+00:00:07,997 --> 00:00:10,423
+Look! A cozy nest, high up in a tree!
+
+4
+00:00:10,823 --> 00:00:11,666
+Who lives here?
+
+5
+00:00:17,466 --> 00:00:19,414
+Yes! A bird lives in a nest!
+
+6
+00:00:19,914 --> 00:00:21,370
+Say it with me! Bird!
+
+7
+00:00:23,170 --> 00:00:25,473
+Birds build nests with twigs and leaves!
+
+8
+00:00:27,573 --> 00:00:29,621
+Look! Sweet honey and pretty flowers!
+
+9
+00:00:30,021 --> 00:00:30,863
+Who lives here?
+
+10
+00:00:36,663 --> 00:00:38,448
+Yes! A bee lives in a hive!
+
+11
+00:00:38,948 --> 00:00:40,353
+Say it with me! Bee!
+
+12
+00:00:42,153 --> 00:00:44,868
+Bees go buzz, buzz, from flower to flower!
+
+13
+00:00:46,968 --> 00:00:49,400
+Look! Big blue waves and colourful coral!
+
+14
+00:00:49,800 --> 00:00:50,643
+Who lives here?
+
+15
+00:00:56,443 --> 00:00:58,364
+Yes! A fish lives in the sea!
+
+16
+00:00:58,864 --> 00:01:00,247
+Say it with me! Fish!
+
+17
+00:01:02,047 --> 00:01:04,005
+Fish swim, swim, swim all day!
+
+18
+00:01:06,105 --> 00:01:08,226
+Look! A little house and a yummy bone!
+
+19
+00:01:08,626 --> 00:01:09,468
+Who lives here?
+
+20
+00:01:15,268 --> 00:01:17,140
+Yes! A dog lives in a kennel!
+
+21
+00:01:17,640 --> 00:01:19,070
+Say it with me! Dog!
+
+22
+00:01:20,870 --> 00:01:22,990
+Dogs love to run and wag their tails!
+
+23
+00:01:25,090 --> 00:01:27,691
+Look! Cold, cold ice and fluffy snow!
+
+24
+00:01:28,091 --> 00:01:28,934
+Who lives here?
+
+25
+00:01:34,734 --> 00:01:37,468
+Yes! A polar bear lives on the snow and ice!
+
+26
+00:01:37,968 --> 00:01:39,676
+Say it with me! Polar Bear!
+
+27
+00:01:41,476 --> 00:01:44,045
+Polar bears have thick white fur to stay warm!
+
+28
+00:01:46,145 --> 00:01:48,524
+Look! Lots of sand and a hot, hot sun!
+
+29
+00:01:48,924 --> 00:01:49,766
+Who lives here?
+
+30
+00:01:55,566 --> 00:01:57,674
+Yes! A camel lives in the desert!
+
+31
+00:01:58,174 --> 00:01:59,647
+Say it with me! Camel!
+
+32
+00:02:01,447 --> 00:02:03,458
+Camels can walk a long, long way!
+
+33
+00:02:05,558 --> 00:02:07,979
+Look! A floating flower and lots of water!
+
+34
+00:02:08,379 --> 00:02:09,221
+Who lives here?
+
+35
+00:02:15,021 --> 00:02:16,977
+Yes! A frog lives in a pond!
+
+36
+00:02:17,477 --> 00:02:18,949
+Say it with me! Frog!
+
+37
+00:02:20,749 --> 00:02:22,451
+Frogs jump, jump, jump!
+
+38
+00:02:24,551 --> 00:02:27,102
+Look! Tall green trees and yummy bananas!
+
+39
+00:02:27,502 --> 00:02:28,344
+Who lives here?
+
+40
+00:02:34,144 --> 00:02:36,229
+Yes! A monkey lives in the jungle!
+
+41
+00:02:36,729 --> 00:02:38,313
+Say it with me! Monkey!
+
+42
+00:02:40,113 --> 00:02:42,345
+Monkeys love to swing from tree to tree!
+
+43
+00:02:44,145 --> 00:02:47,596
+Wow! Great job, friends! You found every animal home!
+
+44
+00:02:48,096 --> 00:02:50,003
+Which animal home do you like best?
+
+45
+00:02:51,003 --> 00:02:52,636
+Bye bye! See you next time!
+

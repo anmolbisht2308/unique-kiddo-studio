@@ -21,9 +21,10 @@
       "topic": "Guess the Animal by its Shadow",
       "format": "shadow",
       "keyword": "animal shadow game",
-      "status": "scheduled",
+      "status": "published",
       "scheduled_for": "2026-10-15T16:00+05:30",
-      "metricool_uuid": "5931635678831266372"
+      "metricool_uuid": "5931635678831266372",
+      "youtube_url": "https://www.youtube.com/shorts/3Jw9jb8cVws"
     },
     {
       "n": 3,
@@ -55,7 +56,8 @@
       "topic": "Who Lives Here? Animal Homes",
       "format": "clues",
       "keyword": "animal homes for kids",
-      "status": "todo"
+      "status": "rendered",
+      "series": "Guess with Kiddo"
     },
     {
       "n": 7,
