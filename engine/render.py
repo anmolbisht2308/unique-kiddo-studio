@@ -166,9 +166,13 @@ def build(ep):
     for i, it in enumerate(items):
         s = t; seg = dict(kind="item", i=i, start=s, item=it, bg=tuple(it.get("bg", PASTELS[i % len(PASTELS)])))
         name = it["name"]; say_name = it.get("say", name)
-        if fmt in ("shadow", "clues"):
+        if fmt in ("shadow", "clues", "letter"):
             tl.sfx += [(s + 0.3, "pop")]
-            if fmt == "clues":
+            if fmt == "letter":
+                tl.sfx += [(s + 0.6, "pop")]
+                e = s + 0.9
+                default_q = f"Which one starts with {it['letter']}?"
+            elif fmt == "clues":
                 tl.sfx += [(s + 0.8, "pop")]
                 e = tl.say(s + 0.9, f"Look! {it['clue_text']}!") + 0.4
                 default_q = "Who uses these? Can you guess?"
@@ -204,7 +208,7 @@ def build(ep):
             e = tl.say(e + 0.3, it.get("reveal_line", f"{NUM_WORDS[n].capitalize()} {plural if n != 1 else name.lower()}!"))
             name = str(n)
         seg["say_t"] = e + 0.5
-        e = tl.say(seg["say_t"], f"Say it with me! {NUM_WORDS[int(name)].capitalize() if name.isdigit() else name}!")
+        e = tl.say(seg["say_t"], it.get("say_line") or f"Say it with me! {NUM_WORDS[int(name)].capitalize() if name.isdigit() else name}!")
         seg["repeat"] = e
         seg["fact_t"] = e + repeat_gap
         e = tl.say(seg["fact_t"], it["fact"]) if it.get("fact") else seg["fact_t"]
@@ -282,6 +286,29 @@ def frame(tl, t):
                 paste_emoji(img, ch, x, y, 300 * s2)
         if revealed:
             paste_emoji(img, it["emoji"], cx, 790, 420 * pop(t, seg["reveal"] + .2, .45))
+    elif fmt == "letter":
+        L = it["letter"]
+        sc = pop(lt, .3, .45)
+        R = 170 * sc
+        if sc > .02:
+            d.ellipse([cx - R, 420 - R, cx + R, 420 + R], fill=(255, 255, 255), outline=DARK, width=max(2, int(8 * sc)))
+            big_text(d, (cx, 412), L + L.lower(), 190, sc, (60, 120, 230), 10)
+        k = clamp((t - seg["reveal"]) / .45) if revealed else 0
+        opts = [(it["emoji"], True), (it["wrong"], False)]
+        if it.get("correct_side", "left") == "right": opts.reverse()
+        for j, (ch, ok) in enumerate(opts):
+            s2 = pop(lt, .6, .4)
+            x0 = cx + (-250 if j == 0 else 250)
+            if ok:
+                x = x0 + (cx - x0) * k; y = 830 + 0 * k; s2 *= 1 + .25 * k
+            else:
+                x = x0; y = 830; s2 *= (1 - k)
+            r = 190 * s2
+            if s2 > .02:
+                d.rounded_rectangle([x - r, y - r, x + r, y + r], radius=48 * s2,
+                                    fill=(225, 255, 225) if ok and k > 0 else (255, 255, 255),
+                                    outline=(60, 170, 90) if ok and k > 0 else DARK, width=max(2, int(7 * s2)))
+                paste_emoji(img, ch, x, y, 290 * s2)
     elif fmt == "learn":
         sc = pop(lt, .3, .5)
         r = 300 * sc
@@ -305,7 +332,7 @@ def frame(tl, t):
                        fill=DARK, anchor="mm")
 
     label_y = 1150 if fmt != "clues" else 1100
-    if fmt in ("shadow", "clues") and not revealed:
+    if fmt in ("shadow", "clues", "letter") and not revealed:
         if t >= seg["think"]:
             tt = t - seg["think"]; total = seg["reveal"] - seg["think"]
             bubble(d, 360, 1230, 1030, 1450, 470, "Hmm... think!" + "." * (1 + int(tt * 2.5) % 3), 64)
@@ -322,7 +349,8 @@ def frame(tl, t):
                 d.text((cx, ry), "?", font=font(120), fill=ACCENT, anchor="mm", stroke_width=8,
                        stroke_fill=(255, 255, 255))
         elif t >= seg.get("ask", 1e9) - .1:
-            q = it.get("ask_screen", "Whose shadow\nis this?" if fmt == "shadow" else "Who uses\nthese?")
+            q = it.get("ask_screen", "Whose shadow\nis this?" if fmt == "shadow" else
+                       f"Which one starts\nwith {it['letter']}?" if fmt == "letter" else "Who uses\nthese?")
             bubble(d, 360, 1230, 1030, 1450, 470, q if "\n" in q else wrap(q, 64, 600), 64)
     elif revealed:
         label = seg["label"].upper()

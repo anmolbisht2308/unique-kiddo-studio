@@ -1,0 +1,52 @@
+1
+00:00:00,900 --> 00:00:02,573
+A! Which one starts with A?
+
+2
+00:00:06,373 --> 00:00:07,855
+Apple! A is for apple!
+
+3
+00:00:08,355 --> 00:00:10,056
+Say it with me! A, apple!
+
+4
+00:00:13,356 --> 00:00:15,206
+B! Which one starts with B?
+
+5
+00:00:19,006 --> 00:00:20,741
+Banana! B is for banana!
+
+6
+00:00:21,241 --> 00:00:23,105
+Say it with me! B, banana!
+
+7
+00:00:26,405 --> 00:00:28,213
+C! Which one starts with C?
+
+8
+00:00:32,013 --> 00:00:33,294
+Cat! C is for cat!
+
+9
+00:00:33,794 --> 00:00:35,434
+Say it with me! C, cat!
+
+10
+00:00:38,734 --> 00:00:41,347
+Last one! D! Which one starts with D?
+
+11
+00:00:45,147 --> 00:00:46,466
+Duck! D is for duck!
+
+12
+00:00:46,966 --> 00:00:48,602
+Say it with me! D, duck!
+
+13
+00:00:51,602 --> 00:00:55,612
+A, B, C, D! You did it! Next time, E, F, G and H!
+

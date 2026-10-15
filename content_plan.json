@@ -255,5 +255,47 @@
       "keyword": "solar system for kids",
       "status": "todo"
     }
-  ]
+  ],
+  "series_abc": {
+    "name": "ABC Game with Kiddo",
+    "format": "letter",
+    "note": "Second series. One part = 4 letters, 2 picture choices per letter, hook style ~60 s.",
+    "plan": [
+      {
+        "id": "abc01",
+        "letters": "A-D",
+        "status": "rendered"
+      },
+      {
+        "id": "abc02",
+        "letters": "E-H",
+        "status": "todo"
+      },
+      {
+        "id": "abc03",
+        "letters": "I-L",
+        "status": "todo"
+      },
+      {
+        "id": "abc04",
+        "letters": "M-P",
+        "status": "todo"
+      },
+      {
+        "id": "abc05",
+        "letters": "Q-T",
+        "status": "todo"
+      },
+      {
+        "id": "abc06",
+        "letters": "U-X",
+        "status": "todo"
+      },
+      {
+        "id": "abc07",
+        "letters": "Y-Z + review",
+        "status": "todo"
+      }
+    ]
+  }
 }

@@ -13,7 +13,7 @@ Output in `out/<id>/`: `video.mp4`, `thumbnail.png`, `subtitles.srt`, `script.md
 ## Episode file
 ```json
 {
-  "id": "ep003", "format": "shadow | clues | learn | count",
+  "id": "ep003", "format": "shadow | clues | learn | count | letter",
   "title_screen": ["LINE 1", "LINE 2"], "round_word": "ROUND",
   "intro": ["Hello, little friends! I'm Kiddo!", "...", "... Ready?"],
   "items": [ {"name": "Elephant", "say": "an elephant", "emoji": "🐘",
@@ -27,6 +27,7 @@ Output in `out/<id>/`: `video.mp4`, `thumbnail.png`, `subtitles.srt`, `script.md
 - `shadow`: silhouette → think → reveal. Needs `hint`.
 - `clues`: two clue emojis → guess who/what → reveal `emoji`. Needs `clues`, `clue_text`.
 - `learn`: show item, say name, repeat, fact.
+- `letter`: big letter + two picture cards (`emoji` = right answer, `wrong`, `correct_side`), guess which starts with `letter`.
 - `count`: N copies of `emoji`, count aloud together. Needs `count`, `plural`.
 Every `emoji` must exist in `assets/noto/2D/png/512` (the engine stops with a clear error if not).
 
