@@ -1,0 +1,73 @@
+{
+  "id": "ep005",
+  "format": "shadow",
+  "series": "Guess with Kiddo",
+  "title_screen": [
+    "GUESS THE",
+    "VEHICLE!"
+  ],
+  "hook_text": "GUESS THE SHADOW!",
+  "round_word": "SHADOW",
+  "intro": [],
+  "think_seconds": 3,
+  "repeat_seconds": 1.2,
+  "bye": false,
+  "items": [
+    {
+      "name": "Bicycle",
+      "say": "a bicycle",
+      "emoji": "🚲",
+      "ask": "What is this shadow? Can you guess?",
+      "hint": "It has two wheels and pedals!",
+      "ask_screen": "What is\nthis shadow?"
+    },
+    {
+      "name": "Airplane",
+      "say": "an airplane",
+      "emoji": "✈️",
+      "ask": "What is this shadow?",
+      "hint": "It flies high in the sky!",
+      "ask_screen": "What is\nthis shadow?"
+    },
+    {
+      "name": "Helicopter",
+      "say": "a helicopter",
+      "emoji": "🚁",
+      "ask": "What is this shadow?",
+      "hint": "Its blades go round and round!",
+      "ask_screen": "What is\nthis shadow?"
+    },
+    {
+      "name": "Rocket",
+      "say": "a rocket",
+      "emoji": "🚀",
+      "ask": "Last one! What is this shadow?",
+      "hint": "It zooms up to the stars!",
+      "ask_screen": "What is\nthis shadow?"
+    }
+  ],
+  "outro_screen": "You got them all!\nHow many did\nYOU guess?",
+  "outro": [
+    "Wow! You got them all! How many did you guess?"
+  ],
+  "seo": {
+    "title": "Guess the Vehicle Shadow! 🚲✈️ Vehicles for Kids | Shadow Game for Kids | Unique Kiddo",
+    "description": "Can your little one guess the vehicle from its shadow? 🤔 Look, think, and shout the answer with Kiddo!\n\nA quick vehicles guessing game for kids. Children learn 4 vehicle names:\n🚲 Bicycle\n✈️ Airplane\n🚁 Helicopter\n🚀 Rocket\n\nEach round has think time so kids can guess, and a \"say it with me\" pause to practise new English words. Great for toddlers, preschool and kindergarten (ages 2–6).\n\n⭐ Subscribe to Unique Kiddo for more fun learning games: animals, colours, numbers, fruits and more!\n\nVoice: Kokoro TTS (Apache 2.0) · Emoji art: Noto Emoji (Apache 2.0)\n\n#vehiclesforkids #shadowgame #kidslearning",
+    "tags": [
+      "vehicles for kids",
+      "guess the vehicle",
+      "vehicle shadow game",
+      "shadow game for kids",
+      "vehicle names for kids",
+      "transport for kids",
+      "guessing game for kids",
+      "kids learning videos",
+      "preschool learning",
+      "toddler learning",
+      "learn english for kids",
+      "educational videos for kids",
+      "unique kiddo",
+      "kiddo"
+    ]
+  }
+}

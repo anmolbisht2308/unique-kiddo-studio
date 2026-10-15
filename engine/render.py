@@ -152,12 +152,15 @@ def build(ep):
     fmt = ep["format"]
 
     # intro
-    tl.sfx += [(0.2, "pop"), (0.5, "pop"), (0.9, "pop")]
-    e = 1.0
-    for line in ep["intro"]:
-        e = tl.say(e, line) + 0.4
-    tl.segments.append(dict(kind="intro", start=0.0, end=e + 0.6))
-    t = e + 0.6
+    if ep.get("intro"):
+        tl.sfx += [(0.2, "pop"), (0.5, "pop"), (0.9, "pop")]
+        e = 1.0
+        for line in ep["intro"]:
+            e = tl.say(e, line) + 0.4
+        tl.segments.append(dict(kind="intro", start=0.0, end=e + 0.6))
+        t = e + 0.6
+    else:  # hook mode: open straight on the first round
+        t = 0.0
 
     items = ep["items"]
     for i, it in enumerate(items):
@@ -214,8 +217,11 @@ def build(ep):
     for line in ep["outro"]:
         e = tl.say(e, line) + 0.5
     bye = e + 0.5
-    tl.sfx.append((bye, "ding"))
-    e = tl.say(bye, "Bye bye! See you next time!")
+    if ep.get("bye", True):
+        tl.sfx.append((bye, "ding"))
+        e = tl.say(bye, "Bye bye! See you next time!")
+    else:
+        bye = 1e9
     tl.segments.append(dict(kind="outro", start=s, end=e + 1.5, bye=bye))
     tl.duration = tl.segments[-1]["end"]
     return tl
@@ -245,8 +251,12 @@ def frame(tl, t):
 
     it = seg["item"]; i = seg["i"]; fmt = ep["format"]
     d = background(img, seg["bg"], t)
-    d.text((W / 2, 150), f"{ep.get('round_word', 'ROUND')} {i + 1} of {len(ep['items'])}", font=font(56),
-           fill=DARK, anchor="mm")
+    if ep.get("hook_text") and i == 0 and t < seg["reveal"]:
+        lt += 0.75  # first frame already shows the puzzle
+        big_text(d, (W / 2, 150), ep["hook_text"], fit_size(ep["hook_text"], 96, 1000), 1.0, ACCENT, 8)
+    else:
+        d.text((W / 2, 150), f"{ep.get('round_word', 'ROUND')} {i + 1} of {len(ep['items'])}", font=font(56),
+               fill=DARK, anchor="mm")
     revealed = t >= seg["reveal"]
     cx, cy = W / 2, 700
 

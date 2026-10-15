@@ -1,0 +1,68 @@
+1
+00:00:00,900 --> 00:00:02,788
+What is this shadow? Can you guess?
+
+2
+00:00:03,188 --> 00:00:04,763
+It has two wheels and pedals!
+
+3
+00:00:08,563 --> 00:00:10,021
+Yes! It's a bicycle!
+
+4
+00:00:10,521 --> 00:00:12,139
+Say it with me! Bicycle!
+
+5
+00:00:15,439 --> 00:00:16,511
+What is this shadow?
+
+6
+00:00:16,911 --> 00:00:18,327
+It flies high in the sky!
+
+7
+00:00:22,127 --> 00:00:23,583
+Yes! It's an airplane!
+
+8
+00:00:24,083 --> 00:00:25,774
+Say it with me! Airplane!
+
+9
+00:00:29,074 --> 00:00:30,146
+What is this shadow?
+
+10
+00:00:30,546 --> 00:00:32,352
+Its blades go round and round!
+
+11
+00:00:36,152 --> 00:00:37,758
+Yes! It's a helicopter!
+
+12
+00:00:38,258 --> 00:00:40,201
+Say it with me! Helicopter!
+
+13
+00:00:43,501 --> 00:00:45,252
+Last one! What is this shadow?
+
+14
+00:00:45,652 --> 00:00:47,100
+It zooms up to the stars!
+
+15
+00:00:50,900 --> 00:00:52,295
+Yes! It's a rocket!
+
+16
+00:00:52,795 --> 00:00:54,465
+Say it with me! Rocket!
+
+17
+00:00:57,465 --> 00:00:59,960
+Wow! You got them all! How many did you guess?
+

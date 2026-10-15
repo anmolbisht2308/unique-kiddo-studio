@@ -4,7 +4,8 @@
     "Never use the same format two days in a row; if the next 'todo' breaks this, take the next one that doesn't.",
     "8 items per episode (count: 6-8 items with counts 1-10). Keep each video under 2:58 so it stays a Short.",
     "Titles: '<Hook>! <2 emoji> <Main keyword> for Kids | <Second keyword> | Unique Kiddo' (max 100 chars).",
-    "Every 7th episode: a 'Mega Quiz' mixing items from the last 6 topics (reuses winners, boosts session time)."
+    "Every 7th episode: a 'Mega Quiz' mixing items from the last 6 topics (reuses winners, boosts session time).",
+    "Short style (from ep005): open straight on round 1 with hook_text (intro: []), 4 rounds, think_seconds 3, no fact lines, bye: false — aim for 45-65 s."
   ],
   "plan": [
     {
@@ -48,7 +49,9 @@
       "topic": "Guess the Vehicle by its Shadow",
       "format": "shadow",
       "keyword": "vehicles for kids",
-      "status": "todo"
+      "status": "rendered",
+      "series": "Guess with Kiddo",
+      "style": "hook: no intro, 4 rounds, ~60s"
     },
     {
       "n": 6,
@@ -56,8 +59,9 @@
       "topic": "Who Lives Here? Animal Homes",
       "format": "clues",
       "keyword": "animal homes for kids",
-      "status": "rendered",
-      "series": "Guess with Kiddo"
+      "status": "published",
+      "series": "Guess with Kiddo",
+      "youtube_url": "https://www.youtube.com/shorts/LrojVmbLoSI"
     },
     {
       "n": 7,
