@@ -93,9 +93,11 @@
       "topic": "Guess the Sea Animal Shadow",
       "format": "shadow",
       "keyword": "sea animals for kids",
-      "status": "rendered",
+      "status": "scheduled",
       "series": "Guess with Kiddo",
-      "style": "hook: no intro, 4 rounds, ~63s"
+      "style": "hook: no intro, 4 rounds, ~63s",
+      "scheduled_for": "2026-10-16T23:26+05:30",
+      "metricool_uuid": "8978194359773908908"
     },
     {
       "n": 11,
