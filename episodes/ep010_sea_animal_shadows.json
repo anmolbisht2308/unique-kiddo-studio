@@ -1,0 +1,73 @@
+{
+  "id": "ep010",
+  "format": "shadow",
+  "series": "Guess with Kiddo",
+  "title_screen": [
+    "GUESS THE",
+    "SEA ANIMAL!"
+  ],
+  "hook_text": "GUESS THE SHADOW!",
+  "round_word": "SHADOW",
+  "intro": [],
+  "think_seconds": 3,
+  "repeat_seconds": 1.2,
+  "bye": false,
+  "items": [
+    {
+      "name": "Octopus",
+      "say": "an octopus",
+      "emoji": "🐙",
+      "ask": "Who lives in the sea? Can you guess?",
+      "hint": "It has eight long, wiggly arms!",
+      "ask_screen": "Who is\nthis shadow?"
+    },
+    {
+      "name": "Crab",
+      "say": "a crab",
+      "emoji": "🦀",
+      "ask": "Who is this shadow?",
+      "hint": "It walks sideways with two big claws!",
+      "ask_screen": "Who is\nthis shadow?"
+    },
+    {
+      "name": "Dolphin",
+      "say": "a dolphin",
+      "emoji": "🐬",
+      "ask": "Who is this shadow?",
+      "hint": "It jumps and splashes in the waves!",
+      "ask_screen": "Who is\nthis shadow?"
+    },
+    {
+      "name": "Whale",
+      "say": "a whale",
+      "emoji": "🐋",
+      "ask": "Last one! Who is this shadow?",
+      "hint": "It is super big and sprays water up high!",
+      "ask_screen": "Who is\nthis shadow?"
+    }
+  ],
+  "outro_screen": "You got them all!\nHow many did\nYOU guess?",
+  "outro": [
+    "Wow! You got them all! How many did you guess?"
+  ],
+  "seo": {
+    "title": "Guess the Sea Animal Shadow! 🐙🐬 Sea Animals for Kids | Shadow Game for Kids | Unique Kiddo",
+    "description": "Can your little one guess the sea animal from its shadow? 🤔 Look, think, and shout the answer with Kiddo!\n\nA quick ocean animals guessing game for kids. Children learn 4 sea animal names:\n🐙 Octopus\n🦀 Crab\n🐬 Dolphin\n🐋 Whale\n\nEach round has think time so kids can guess, and a \"say it with me\" pause to practise new English words. Great for toddlers, preschool and kindergarten (ages 2–6).\n\n⭐ Subscribe to Unique Kiddo for more fun learning games: animals, vehicles, letters, numbers and more!\n\nVoice: Kokoro TTS (Apache 2.0) · Emoji art: Noto Emoji (Apache 2.0)\n\n#seaanimalsforkids #shadowgame #kidslearning",
+    "tags": [
+      "sea animals for kids",
+      "ocean animals for kids",
+      "guess the sea animal",
+      "sea animal shadow game",
+      "shadow game for kids",
+      "sea animal names for kids",
+      "guessing game for kids",
+      "kids learning videos",
+      "preschool learning",
+      "toddler learning",
+      "learn english for kids",
+      "educational videos for kids",
+      "unique kiddo",
+      "kiddo"
+    ]
+  }
+}

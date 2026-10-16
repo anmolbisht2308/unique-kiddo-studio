@@ -1,0 +1,68 @@
+1
+00:00:00,900 --> 00:00:02,856
+Who lives in the sea? Can you guess?
+
+2
+00:00:03,256 --> 00:00:05,133
+It has eight long, wiggly arms!
+
+3
+00:00:08,933 --> 00:00:10,431
+Yes! It's an octopus!
+
+4
+00:00:10,931 --> 00:00:12,714
+Say it with me! Octopus!
+
+5
+00:00:16,014 --> 00:00:17,077
+Who is this shadow?
+
+6
+00:00:17,477 --> 00:00:19,557
+It walks sideways with two big claws!
+
+7
+00:00:23,357 --> 00:00:24,614
+Yes! It's a crab!
+
+8
+00:00:25,114 --> 00:00:26,478
+Say it with me! Crab!
+
+9
+00:00:29,778 --> 00:00:30,841
+Who is this shadow?
+
+10
+00:00:31,241 --> 00:00:33,176
+It jumps and splashes in the waves!
+
+11
+00:00:36,976 --> 00:00:38,401
+Yes! It's a dolphin!
+
+12
+00:00:38,901 --> 00:00:40,488
+Say it with me! Dolphin!
+
+13
+00:00:43,788 --> 00:00:45,539
+Last one! Who is this shadow?
+
+14
+00:00:45,939 --> 00:00:48,306
+It is super big and sprays water up high!
+
+15
+00:00:52,106 --> 00:00:53,355
+Yes! It's a whale!
+
+16
+00:00:53,855 --> 00:00:55,187
+Say it with me! Whale!
+
+17
+00:00:58,187 --> 00:01:00,682
+Wow! You got them all! How many did you guess?
+

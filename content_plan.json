@@ -93,7 +93,9 @@
       "topic": "Guess the Sea Animal Shadow",
       "format": "shadow",
       "keyword": "sea animals for kids",
-      "status": "todo"
+      "status": "rendered",
+      "series": "Guess with Kiddo",
+      "style": "hook: no intro, 4 rounds, ~63s"
     },
     {
       "n": 11,
