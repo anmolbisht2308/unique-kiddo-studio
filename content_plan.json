@@ -106,9 +106,12 @@
       "topic": "What Do We Wear? (weather clues)",
       "format": "clues",
       "keyword": "clothes names for kids",
-      "status": "rendered",
+      "status": "published",
       "series": "Guess with Kiddo",
-      "style": "hook: no intro, 4 rounds, ~66s"
+      "style": "hook: no intro, 4 rounds, ~66s",
+      "scheduled_for": "2026-10-17T10:48+05:30",
+      "metricool_uuid": "-8466288867995006886",
+      "youtube_url": "https://www.youtube.com/shorts/IoETTHns69M"
     },
     {
       "n": 12,
