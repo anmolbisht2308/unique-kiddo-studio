@@ -1,0 +1,59 @@
+{
+  "id": "fam01",
+  "format": "doors",
+  "series": "Pick a Door: Adult Life Edition",
+  "audience": "general (teens & adults) - NOT made for kids; post on a separate channel",
+  "host": "emoji",
+  "voice": {"am_michael": 1.0},
+  "kiddo_voice": {"af_sarah": 1.0},
+  "kiddo_pitch": 1.0,
+  "speed": 1.05,
+  "wall": [222, 232, 244],
+  "rug": [70, 80, 110],
+  "title_screen": ["PICK A DOOR", "MONDAY EDITION"],
+  "hook_line": "Pick a door. Choose wisely.",
+  "ask_line": "Which one are you opening?",
+  "wrong_text": "BAD CHOICE!",
+  "open_order": [0, 1, 2],
+  "doors": [
+    {
+      "emoji": "⏰", "name": "5 AM alarm", "reaction": "scared",
+      "kiddo_line": "Nooo! Five more minutes!",
+      "caption": "5 AM ALARM!",
+      "line": "The alarm. On your day off. Ouch."
+    },
+    {
+      "emoji": "📧", "name": "999 emails", "reaction": "slip",
+      "kiddo_line": "Who sent all of these?!",
+      "caption": "999 UNREAD!", "caption_color": [70, 110, 220],
+      "line": "Nine hundred ninety nine unread emails. Good luck."
+    },
+    {
+      "emoji": "🛌", "name": "Day off", "reaction": "win", "win": true, "face": "😴",
+      "kiddo_line": "Ahhh. Sleeping till noon.",
+      "caption": "DAY OFF!",
+      "line": "A surprise day off! Best door ever."
+    }
+  ],
+  "outro_line": "Which door did you pick? Comment your number!",
+  "outro_screen": "COMMENT 1, 2 OR 3!",
+  "outro_face": "😏",
+  "seo": {
+    "title": "Pick a Door: Monday Edition 🚪😱 Which One Are You Opening? #shorts",
+    "description": "Pick a door... choose wisely. 🚪 Door 1, door 2 or door 3? Comment the number you picked!\n\nThe Monday edition: a 5 AM alarm ⏰, 999 unread emails 📧 or a surprise day off 🛌. Only one door is safe.\n\nNew Pick a Door every day. Follow for the next one!\n\nVoice: Kokoro TTS (Apache 2.0) · Emoji art: Noto Emoji (Apache 2.0) · Music and sound effects: original\n\n#pickadoor #chooseadoor #wouldyourather",
+    "tags": [
+      "pick a door",
+      "choose a door",
+      "don't pick the wrong door",
+      "which door would you choose",
+      "would you rather",
+      "monday mood",
+      "relatable",
+      "funny shorts",
+      "this or that",
+      "choose wisely",
+      "office humor",
+      "monday memes"
+    ]
+  }
+}

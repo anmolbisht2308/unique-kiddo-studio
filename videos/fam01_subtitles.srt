@@ -1,0 +1,60 @@
+1
+00:00:00,250 --> 00:00:01,749
+Pick a door. Choose wisely.
+
+2
+00:00:01,849 --> 00:00:03,128
+Which one are you opening?
+
+3
+00:00:03,378 --> 00:00:03,894
+One...
+
+4
+00:00:04,078 --> 00:00:04,581
+Two...
+
+5
+00:00:04,778 --> 00:00:05,318
+Three?
+
+6
+00:00:08,878 --> 00:00:09,836
+Door number one!
+
+7
+00:00:10,728 --> 00:00:12,158
+Nooo! Five more minutes!
+
+8
+00:00:12,358 --> 00:00:14,369
+The alarm. On your day off. Ouch.
+
+9
+00:00:15,719 --> 00:00:16,685
+Door number two!
+
+10
+00:00:17,569 --> 00:00:18,801
+Who sent all of these?!
+
+11
+00:00:19,001 --> 00:00:22,124
+Nine hundred ninety nine unread emails. Good luck.
+
+12
+00:00:23,474 --> 00:00:24,552
+Door number three!
+
+13
+00:00:25,924 --> 00:00:27,250
+Ahhh. Sleeping till noon.
+
+14
+00:00:27,450 --> 00:00:29,765
+A surprise day off! Best door ever.
+
+15
+00:00:30,565 --> 00:00:32,831
+Which door did you pick? Comment your number!
+

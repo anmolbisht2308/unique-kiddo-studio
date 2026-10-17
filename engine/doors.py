@@ -40,6 +40,19 @@ REACT_SFX = {
     "buzz": [(0, "buzz")],
 }
 WRONG_COL = (240, 90, 60)
+FACES = {"sour": "😖", "hot": "🥵", "stinky": "🤢", "cold": "🥶", "wet": "😩", "slip": "😵", "tickle": "🤣",
+         "scared": "😱", "buzz": "😨", "bounce": "😳", "sneeze": "🤧", "float": "🤩", "win": "🥳", "love": "😍"}
+
+
+def place_face(img, ch, P, size=360):
+    """emoji-face host (for the family edition, no Kiddo)"""
+    e = R.emoji_img(ch, size)
+    nw, nh = max(2, int(e.width * P["sx"])), max(2, int(e.height * P["sy"]))
+    L = e.resize((nw, nh), Image.BICUBIC)
+    if abs(P["rot"]) > .2:
+        L = L.rotate(P["rot"], resample=Image.BICUBIC, expand=True)
+    x = KID_X + P["dx"]; y = KID_Y + P["dy"] * .6 + 15
+    img.alpha_composite(L, (int(x - L.width / 2), int(y - nh / 2 - L.height / 2)))
 
 
 def kid_pose(kind, u, t):
@@ -386,8 +399,9 @@ def frame(tl, t):
     img.alpha_composite(ov); ov = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     # title (always on: it is the hook)
     tp = 1 + .03 * math.sin(t * 3)
-    R.letter_word(img, ep.get("title_screen", ["DON'T PICK THE", "WRONG DOOR!"])[0], W / 2, 135, int(92 * tp), seed=3)
-    R.letter_word(img, ep.get("title_screen", ["DON'T PICK THE", "WRONG DOOR!"])[1], W / 2, 262, int(112 * tp), seed=8)
+    t1, t2 = ep.get("title_screen", ["DON'T PICK THE", "WRONG DOOR!"])
+    R.letter_word(img, t1, W / 2, 135, int(R.fit_size(t1, 92, 960) * tp), seed=3)
+    R.letter_word(img, t2, W / 2, 262, int(R.fit_size(t2, 112, 960) * tp), seed=8)
     # kiddo pose
     P = kid_pose("none", 0, t)
     if t < tl.hook_end:
@@ -444,9 +458,17 @@ def frame(tl, t):
     # kiddo + effects
     if seg is not None and t >= seg["react"]:
         draw_fx(seg["kind"], t - seg["react"], img, ov, P, seed=seg["idx"] * 7 + 1)
-    layer = kiddo_layer(KID_S, t, eyes=P["eyes"], mouth=P["mouth"], arms=P["arms"], body=P["body"],
-                        look=P["look"], cheeks=P["cheeks"])
-    place_kiddo(img, layer, KID_X + P["dx"], KID_Y + P["dy"], P["sx"], P["sy"], P["rot"])
+    if ep.get("host") == "emoji":
+        if t >= tl.outro: face = ep.get("outro_face", "😎")
+        elif seg is not None and t >= seg["react"]: face = seg["door"].get("face", FACES.get(seg["kind"], "😮"))
+        elif seg is not None: face = "😬"
+        elif t >= tl.cd: face = "🤔"
+        else: face = "😀"
+        place_face(img, face, P)
+    else:
+        layer = kiddo_layer(KID_S, t, eyes=P["eyes"], mouth=P["mouth"], arms=P["arms"], body=P["body"],
+                            look=P["look"], cheeks=P["cheeks"])
+        place_kiddo(img, layer, KID_X + P["dx"], KID_Y + P["dy"], P["sx"], P["sy"], P["rot"])
     img.alpha_composite(ov)
     d = ImageDraw.Draw(img)
     # countdown
@@ -463,16 +485,16 @@ def frame(tl, t):
         cap = seg["door"].get("caption", "")
         if seg["win"]:
             R.letter_word(img, cap or "YOU WIN!", W / 2, 1225, int(130 * min(1.0, R.pop(u, 0, .45)) + 1), seed=5)
-        elif t >= seg["line_t"]:
+        elif t >= seg["line_t"] and ep.get("wrong_text", "WRONG DOOR!"):
             v = t - seg["line_t"]
-            R.big_text(d, (W / 2, 1225), "WRONG DOOR!", 112, R.pop(v, 0, .35) * (1 + .04 * math.sin(v * 10)),
+            R.big_text(d, (W / 2, 1225), ep.get("wrong_text", "WRONG DOOR!"), R.fit_size(ep.get("wrong_text", "WRONG DOOR!"), 112, 1000), R.pop(v, 0, .35) * (1 + .04 * math.sin(v * 10)),
                        (230, 50, 50), 10)
         elif cap:
             sc = R.pop(u, 0, .4) * (1 + .05 * math.sin(u * 12))
             R.big_text(d, (W / 2, 1225), cap, R.fit_size(cap, 120, 1000), sc, tuple(seg["door"].get("caption_color", WRONG_COL)), 10)
     if t >= tl.outro:
         u = t - tl.outro
-        R.big_text(d, (W / 2, 1225), ep.get("outro_screen", "PLAY AGAIN!"), 110, R.pop(u, 0, .45), (60, 120, 230), 10)
+        R.big_text(d, (W / 2, 1225), ep.get("outro_screen", "PLAY AGAIN!"), R.fit_size(ep.get("outro_screen", "PLAY AGAIN!"), 110, 980), R.pop(u, 0, .45), (60, 120, 230), 10)
     # screen shake
     if P["shake"] > .5:
         sx_ = int(P["shake"] * math.sin(t * 61)); sy_ = int(P["shake"] * math.cos(t * 53))

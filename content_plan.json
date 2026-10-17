@@ -326,7 +326,9 @@
         "id": "door01",
         "topic": "Yummy or Yucky? lemon (sour), chili (hot), cake (win)",
         "win_door": 2,
-        "status": "rendered"
+        "status": "published",
+        "youtube_url": "https://www.youtube.com/shorts/3ieCRkSRPgw",
+        "metricool_uuid": "4514235168457113748"
       },
       {
         "id": "door02",
@@ -380,6 +382,39 @@
         "id": "door10",
         "topic": "Snack Doors: hot pepper sauce (hot), popcorn that pops (scared), cookie (win)",
         "win_door": 3,
+        "status": "todo"
+      }
+    ]
+  },
+  "series_family": {
+    "name": "Pick a Door: Adult Life Edition",
+    "audience": "general audience (teens/adults), NOT made for kids, comments on",
+    "channel": "needs its own YouTube channel (not Unique Kiddo)",
+    "host": "emoji faces, no Kiddo",
+    "plan": [
+      {
+        "id": "fam01",
+        "topic": "Monday Edition: 5 AM alarm, 999 emails, day off",
+        "status": "rendered"
+      },
+      {
+        "id": "fam02",
+        "topic": "Food Delivery Edition: cold fries, wrong order, free dessert",
+        "status": "todo"
+      },
+      {
+        "id": "fam03",
+        "topic": "School Edition: pop quiz, group project, snow day",
+        "status": "todo"
+      },
+      {
+        "id": "fam04",
+        "topic": "Phone Edition: 1% battery, cracked screen, free Wi-Fi",
+        "status": "todo"
+      },
+      {
+        "id": "fam05",
+        "topic": "Weekend Edition: chores list, rain on picnic day, nap",
         "status": "todo"
       }
     ]
