@@ -1,0 +1,81 @@
+{
+  "id": "ep011",
+  "format": "clues",
+  "series": "Guess with Kiddo",
+  "title_screen": [
+    "WHAT DO",
+    "WE WEAR?"
+  ],
+  "hook_text": "WHAT DO WE WEAR?",
+  "round_word": "WEATHER",
+  "intro": [],
+  "think_seconds": 3,
+  "repeat_seconds": 1.2,
+  "bye": false,
+  "items": [
+    {
+      "name": "Sunglasses",
+      "say": "sunglasses",
+      "emoji": "🕶️",
+      "clues": ["☀️", "🏖️"],
+      "clue_text": "Bright sunshine at the beach",
+      "ask": "What do we wear? Can you guess?",
+      "ask_screen": "What do\nwe wear?",
+      "reveal_line": "Yes! We wear sunglasses!"
+    },
+    {
+      "name": "Boots",
+      "say": "boots",
+      "emoji": "🥾",
+      "clues": ["🌧️", "💦"],
+      "clue_text": "Rain and big splashy puddles",
+      "ask": "What do we wear on our feet?",
+      "ask_screen": "What do\nwe wear?",
+      "reveal_line": "Yes! We wear boots! Splash, splash!"
+    },
+    {
+      "name": "Scarf",
+      "say": "a scarf",
+      "emoji": "🧣",
+      "clues": ["🌬️", "🍂"],
+      "clue_text": "A windy day with falling leaves",
+      "ask": "What do we wear around our neck?",
+      "ask_screen": "What do\nwe wear?",
+      "reveal_line": "Yes! We wear a scarf!"
+    },
+    {
+      "name": "Gloves",
+      "say": "gloves",
+      "emoji": "🧤",
+      "clues": ["❄️", "⛄"],
+      "clue_text": "Cold snow and a snowman",
+      "ask": "Last one! What do we wear on our hands?",
+      "ask_screen": "What do\nwe wear?",
+      "reveal_line": "Yes! We wear gloves! Nice and warm!"
+    }
+  ],
+  "outro_screen": "You got them all!\nHow many did\nYOU guess?",
+  "outro": [
+    "Wow! You got them all! How many did you guess?"
+  ],
+  "seo": {
+    "title": "What Do We Wear? ☀️❄️ Clothes Names for Kids | Weather Guessing Game | Unique Kiddo",
+    "description": "Sunny, rainy, windy or snowy, what do we wear? 🤔 Look at the weather clues and guess with Kiddo!\n\nA quick clothes and weather guessing game for kids. Children learn 4 clothes names:\n🕶️ Sunglasses (sunny day)\n🥾 Boots (rainy day)\n🧣 Scarf (windy day)\n🧤 Gloves (snowy day)\n\nEach round has think time so kids can guess, and a \"say it with me\" pause to practise new English words. Great for toddlers, preschool and kindergarten (ages 2–6).\n\n⭐ Subscribe to Unique Kiddo for more fun learning games: animals, vehicles, letters, numbers and more!\n\nVoice: Kokoro TTS (Apache 2.0) · Emoji art: Noto Emoji (Apache 2.0)\n\n#clothesforkids #weatherforkids #kidslearning",
+    "tags": [
+      "clothes names for kids",
+      "what do we wear",
+      "weather for kids",
+      "clothes and weather for kids",
+      "weather clothes game",
+      "guessing game for kids",
+      "guess with kiddo",
+      "kids learning videos",
+      "preschool learning",
+      "toddler learning",
+      "learn english for kids",
+      "educational videos for kids",
+      "unique kiddo",
+      "kiddo"
+    ]
+  }
+}
