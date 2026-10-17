@@ -431,19 +431,31 @@
         "id": "gag01",
         "gag": "door",
         "title": "He Should Have Read the Sign",
-        "status": "rendered"
+        "status": "published",
+        "youtube_url": "https://www.youtube.com/shorts/_Rofofpb-ZA",
+        "metricool_uuid": "2768231316290358475",
+        "channel": "Unique Kiddo",
+        "made_for_kids": false
       },
       {
         "id": "gag02",
         "gag": "sneeze",
         "title": "Worst Sneeze Ever",
-        "status": "rendered"
+        "status": "scheduled",
+        "scheduled_for": "2026-10-18T12:00+05:30",
+        "metricool_uuid": "-7638493567821263316",
+        "channel": "Unique Kiddo",
+        "made_for_kids": false
       },
       {
         "id": "gag03",
         "gag": "bubble",
         "title": "Bubble Gum Went Wrong",
-        "status": "rendered"
+        "status": "scheduled",
+        "scheduled_for": "2026-10-18T19:00+05:30",
+        "metricool_uuid": "6487886320883287339",
+        "channel": "Unique Kiddo",
+        "made_for_kids": false
       },
       {
         "id": "gag04",
@@ -480,6 +492,7 @@
         "idea": "Balloon pump: inflates himself instead",
         "status": "todo"
       }
-    ]
+    ],
+    "channel": "Unique Kiddo (Anmol's call, Oct 18): gags posted there as not made for kids"
   }
 }
