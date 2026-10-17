@@ -1,0 +1,51 @@
+{
+  "id": "door01",
+  "format": "doors",
+  "series": "Pick a Door with Kiddo",
+  "title_screen": ["DON'T PICK THE", "WRONG DOOR!"],
+  "hook_line": "Don't pick the wrong door!",
+  "ask_line": "Which door will you choose?",
+  "open_order": [0, 2, 1],
+  "doors": [
+    {
+      "emoji": "🍋", "name": "Lemon", "reaction": "sour",
+      "kiddo_line": "Ewww! Sooo sour!",
+      "caption": "SO SOUR!", "caption_color": [225, 175, 20],
+      "line": "A sour lemon! Oops!"
+    },
+    {
+      "emoji": "🎂", "name": "Cake", "reaction": "win", "win": true,
+      "kiddo_line": "Yay! Yummy, yummy cake!",
+      "caption": "YOU WIN!",
+      "line": "A sweet birthday cake! You picked the right door!"
+    },
+    {
+      "emoji": "🌶️", "name": "Chili", "reaction": "hot",
+      "kiddo_line": "Hot, hot, HOT! Water, please!",
+      "caption": "HOT HOT HOT!", "caption_color": [230, 40, 30],
+      "line": "A spicy chili! Oops!"
+    }
+  ],
+  "outro_line": "Did you pick door number two? Let's play again!",
+  "outro_screen": "PLAY AGAIN!",
+  "seo": {
+    "title": "Don't Pick the Wrong Door! 🚪🌶️ Choose a Door Game for Kids | Funny Kids Game | Unique Kiddo",
+    "description": "Don't pick the wrong door! 🚪 Which door will YOU choose? Play the funny choose-a-door game with Kiddo and see what's hiding inside!\n\nA silly guessing game for kids with a sour lemon 🍋, a spicy chili 🌶️ and a sweet birthday cake 🎂. Kids learn food words and tastes (sour, spicy, sweet) while they laugh along.\n\nPick door 1, 2 or 3 before the countdown ends, then watch Kiddo open them all! Great for toddlers, preschool and kindergarten (ages 2–6).\n\n⭐ Subscribe to Unique Kiddo for a new Pick a Door game every week!\n\nVoice: Kokoro TTS (Apache 2.0) · Emoji art: Noto Emoji (Apache 2.0) · Music and sound effects: original\n\n#pickadoor #funnykids #kidsgames",
+    "tags": [
+      "don't pick the wrong door",
+      "choose a door",
+      "pick a door",
+      "which door",
+      "funny kids game",
+      "funny videos for kids",
+      "guessing game for kids",
+      "kids games",
+      "funny cartoon for kids",
+      "toddler videos",
+      "preschool learning",
+      "food for kids",
+      "unique kiddo",
+      "kiddo"
+    ]
+  }
+}

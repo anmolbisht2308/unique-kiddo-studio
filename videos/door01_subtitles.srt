@@ -1,0 +1,60 @@
+1
+00:00:00,250 --> 00:00:01,449
+Don't pick the wrong door!
+
+2
+00:00:01,549 --> 00:00:02,771
+Which door will you choose?
+
+3
+00:00:03,021 --> 00:00:03,531
+One...
+
+4
+00:00:03,721 --> 00:00:04,253
+Two...
+
+5
+00:00:04,421 --> 00:00:04,938
+Three?
+
+6
+00:00:08,521 --> 00:00:09,400
+Door number one!
+
+7
+00:00:10,371 --> 00:00:11,558
+Ewww! Sooo sour!
+
+8
+00:00:11,758 --> 00:00:13,239
+A sour lemon! Oops!
+
+9
+00:00:14,589 --> 00:00:15,562
+Door number three!
+
+10
+00:00:16,439 --> 00:00:18,070
+Hot, hot, HOT! Water, please!
+
+11
+00:00:18,270 --> 00:00:19,811
+A spicy chili! Oops!
+
+12
+00:00:21,161 --> 00:00:22,053
+Door number two!
+
+13
+00:00:23,611 --> 00:00:24,818
+Yay! Yummy, yummy cake!
+
+14
+00:00:25,018 --> 00:00:27,536
+A sweet birthday cake! You picked the right door!
+
+15
+00:00:28,336 --> 00:00:30,766
+Did you pick door number two? Let's play again!
+

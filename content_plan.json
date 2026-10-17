@@ -307,5 +307,81 @@
         "status": "todo"
       }
     ]
+  },
+  "series_doors": {
+    "name": "Pick a Door with Kiddo",
+    "format": "doors",
+    "engine": "python3 engine/doors.py episodes/<file>.json",
+    "why": "Research Oct 2026 (vidIQ): door-choice surprise games are the top-breakout kids Shorts format (NurSure 'What's Behind the Door?' 162M views; 'Don't Pick the Wrong Door' kids games 300-500K views on channels with <500 subs). Winners run 17-37 s. 'choose a door' searches +235% month on month.",
+    "rules": [
+      "3 doors, 2 funny wrong doors + 1 win door; open the win door last (open_order).",
+      "Move the win door's position between episodes (not always door 2).",
+      "Reactions available: sour, hot, stinky, cold, wet, slip, tickle, scared, buzz, bounce, sneeze, float (wrong); win, love (right).",
+      "Each episode teaches 3 words + one describing word each (sour lemon, spicy chili, sweet cake).",
+      "Keep 28-36 s. Title starts 'Don't Pick the Wrong Door!' + 2 emoji, keywords: choose a door, funny kids game.",
+      "Nothing scary: roars and bugs stay silly, never threatening."
+    ],
+    "plan": [
+      {
+        "id": "door01",
+        "topic": "Yummy or Yucky? lemon (sour), chili (hot), cake (win)",
+        "win_door": 2,
+        "status": "rendered"
+      },
+      {
+        "id": "door02",
+        "topic": "Animal Doors: skunk (stinky), frog (bounce), puppy (love)",
+        "win_door": 3,
+        "status": "todo"
+      },
+      {
+        "id": "door03",
+        "topic": "Weather Doors: rain cloud (wet), snowman (cold), rainbow (win)",
+        "win_door": 1,
+        "status": "todo"
+      },
+      {
+        "id": "door04",
+        "topic": "Silly Surprises: banana peel (slip), feather (tickle), gift (win)",
+        "win_door": 2,
+        "status": "todo"
+      },
+      {
+        "id": "door05",
+        "topic": "Jungle Doors: lion (scared), bee (buzz), kitten (love)",
+        "win_door": 3,
+        "status": "todo"
+      },
+      {
+        "id": "door06",
+        "topic": "Kitchen Doors: pepper shaker (sneeze), ice cube (cold), ice cream (win)",
+        "win_door": 1,
+        "status": "todo"
+      },
+      {
+        "id": "door07",
+        "topic": "Party Doors: balloon (float), sour candy (sour), cupcake (win)",
+        "win_door": 3,
+        "status": "todo"
+      },
+      {
+        "id": "door08",
+        "topic": "Farm Doors: skunk (stinky), rooster (scared), bunny (love)",
+        "win_door": 2,
+        "status": "todo"
+      },
+      {
+        "id": "door09",
+        "topic": "Bath Time Doors: bucket of water (wet), soap bubbles (tickle), rubber duck (win)",
+        "win_door": 1,
+        "status": "todo"
+      },
+      {
+        "id": "door10",
+        "topic": "Snack Doors: hot pepper sauce (hot), popcorn that pops (scared), cookie (win)",
+        "win_door": 3,
+        "status": "todo"
+      }
+    ]
   }
 }
