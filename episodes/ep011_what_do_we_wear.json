@@ -1,0 +1,77 @@
+{
+  "id": "ep011",
+  "format": "clues",
+  "series": "Guess with Kiddo",
+  "title_screen": [
+    "WHAT DO",
+    "WE WEAR?"
+  ],
+  "hook_text": "WHAT DO WE WEAR?",
+  "round_word": "ROUND",
+  "intro": [],
+  "think_seconds": 3,
+  "repeat_seconds": 1.2,
+  "bye": false,
+  "items": [
+    {
+      "name": "Coat",
+      "say": "a coat",
+      "emoji": "🧥",
+      "clues": ["❄️", "🥶"],
+      "clue_text": "Snow is falling and it is so chilly",
+      "ask": "Brrr! What do we wear?",
+      "reveal_line": "Yes! A warm, cozy coat!"
+    },
+    {
+      "name": "Rain Boots",
+      "say": "rain boots",
+      "emoji": "👢",
+      "clues": ["🌧️", "💧"],
+      "clue_text": "Rainy clouds and big, splashy puddles",
+      "ask": "What do we wear?",
+      "reveal_line": "Yes! Rain boots for splashing!"
+    },
+    {
+      "name": "Scarf",
+      "say": "a scarf",
+      "emoji": "🧣",
+      "clues": ["🌬️", "🍂"],
+      "clue_text": "A windy day with falling leaves",
+      "ask": "What do we wear?",
+      "reveal_line": "Yes! A soft scarf for our neck!"
+    },
+    {
+      "name": "Swimsuit",
+      "say": "a swimsuit",
+      "emoji": "🩱",
+      "clues": ["☀️", "🌊"],
+      "clue_text": "Hot sunshine and cool blue waves",
+      "ask": "Last one! What do we wear?",
+      "reveal_line": "Yes! A swimsuit for the water!"
+    }
+  ],
+  "outro_screen": "You got them all!\nHow many did\nYOU guess?",
+  "outro": [
+    "Wow! You got them all! How many did you guess?"
+  ],
+  "seo": {
+    "title": "What Do We Wear? 🧥👢 Clothes for Kids | Weather Guessing Game | Unique Kiddo",
+    "description": "Snowy, rainy, windy or sunny, what do we wear? 🤔 Look at the two clues, think, and shout the answer with Kiddo!\n\nA quick clothes and weather guessing game for kids. Children learn 4 clothes names:\n🧥 Coat\n👢 Rain Boots\n🧣 Scarf\n🩱 Swimsuit\n\nEach round has think time so kids can guess, and a \"say it with me\" pause to practise new English words. Great for toddlers, preschool and kindergarten (ages 2–6).\n\n⭐ Subscribe to Unique Kiddo for more fun learning games: animals, jobs, vehicles, letters and more!\n\nVoice: Kokoro TTS (Apache 2.0) · Emoji art: Noto Emoji (Apache 2.0)\n\n#clothesforkids #guessinggame #kidslearning",
+    "tags": [
+      "clothes names for kids",
+      "clothes for kids",
+      "what do we wear",
+      "weather for kids",
+      "weather and clothes for kids",
+      "guessing game for kids",
+      "guess the clothes",
+      "kids learning videos",
+      "preschool learning",
+      "toddler learning",
+      "learn english for kids",
+      "educational videos for kids",
+      "unique kiddo",
+      "kiddo"
+    ]
+  }
+}

@@ -1,68 +1,68 @@
 1
-00:00:00,900 --> 00:00:02,790
-Look! Bright sunshine at the beach!
+00:00:00,900 --> 00:00:03,211
+Look! Snow is falling and it is so chilly!
 
 2
-00:00:03,190 --> 00:00:04,909
-What do we wear? Can you guess?
+00:00:03,611 --> 00:00:05,624
+Brrr! What do we wear?
 
 3
-00:00:08,709 --> 00:00:10,329
-Yes! We wear sunglasses!
+00:00:09,424 --> 00:00:11,226
+Yes! A warm, cozy coat!
 
 4
-00:00:10,829 --> 00:00:12,701
-Say it with me! Sunglasses!
+00:00:11,726 --> 00:00:13,036
+Say it with me! Coat!
 
 5
-00:00:16,001 --> 00:00:18,141
-Look! Rain and big splashy puddles!
+00:00:16,336 --> 00:00:19,091
+Look! Rainy clouds and big, splashy puddles!
 
 6
-00:00:18,541 --> 00:00:19,883
-What do we wear on our feet?
+00:00:19,491 --> 00:00:20,365
+What do we wear?
 
 7
-00:00:23,683 --> 00:00:25,828
-Yes! We wear boots! Splash, splash!
+00:00:24,165 --> 00:00:26,103
+Yes! Rain boots for splashing!
 
 8
-00:00:26,328 --> 00:00:27,810
-Say it with me! Boots!
+00:00:26,603 --> 00:00:28,353
+Say it with me! Rain Boots!
 
 9
-00:00:31,110 --> 00:00:33,250
+00:00:31,653 --> 00:00:33,793
 Look! A windy day with falling leaves!
 
 10
-00:00:33,650 --> 00:00:35,100
-What do we wear around our neck?
+00:00:34,193 --> 00:00:35,068
+What do we wear?
 
 11
-00:00:38,900 --> 00:00:40,272
-Yes! We wear a scarf!
+00:00:38,868 --> 00:00:40,836
+Yes! A soft scarf for our neck!
 
 12
-00:00:40,772 --> 00:00:42,309
+00:00:41,336 --> 00:00:42,873
 Say it with me! Scarf!
 
 13
-00:00:45,609 --> 00:00:47,518
-Look! Cold snow and a snowman!
+00:00:46,173 --> 00:00:48,454
+Look! Hot sunshine and cool blue waves!
 
 14
-00:00:47,918 --> 00:00:50,142
-Last one! What do we wear on our hands?
+00:00:48,854 --> 00:00:50,423
+Last one! What do we wear?
 
 15
-00:00:53,942 --> 00:00:56,121
-Yes! We wear gloves! Nice and warm!
+00:00:54,223 --> 00:00:56,029
+Yes! A swimsuit for the water!
 
 16
-00:00:56,621 --> 00:00:58,174
-Say it with me! Gloves!
+00:00:56,529 --> 00:00:58,212
+Say it with me! Swimsuit!
 
 17
-00:01:01,174 --> 00:01:03,670
+00:01:01,212 --> 00:01:03,708
 Wow! You got them all! How many did you guess?
 

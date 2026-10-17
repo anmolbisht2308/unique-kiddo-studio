@@ -1,308 +1,308 @@
 {
- "_rules": [
-  "Pick the first entry with status 'todo'. Never repeat a topic already 'scheduled' or 'published'.",
-  "Never use the same format two days in a row; if the next 'todo' breaks this, take the next one that doesn't.",
-  "8 items per episode (count: 6-8 items with counts 1-10). Keep each video under 2:58 so it stays a Short.",
-  "Titles: '<Hook>! <2 emoji> <Main keyword> for Kids | <Second keyword> | Unique Kiddo' (max 100 chars).",
-  "Every 7th episode: a 'Mega Quiz' mixing items from the last 6 topics (reuses winners, boosts session time).",
-  "Short style (from ep005): open straight on round 1 with hook_text (intro: []), 4 rounds, think_seconds 3, no fact lines, bye: false — aim for 45-65 s."
- ],
- "plan": [
-  {
-   "n": 1,
-   "id": "ep001",
-   "topic": "Guess the Job (community helpers)",
-   "format": "clues",
-   "keyword": "community helpers for kids",
-   "status": "published"
-  },
-  {
-   "n": 2,
-   "id": "ep002",
-   "topic": "Guess the Animal by its Shadow",
-   "format": "shadow",
-   "keyword": "animal shadow game",
-   "status": "published",
-   "scheduled_for": "2026-10-15T16:00+05:30",
-   "metricool_uuid": "5931635678831266372",
-   "youtube_url": "https://www.youtube.com/shorts/3Jw9jb8cVws"
-  },
-  {
-   "n": 3,
-   "id": "ep003",
-   "topic": "Count the Fruits 1 to 10",
-   "format": "count",
-   "keyword": "counting 1 to 10 for kids",
-   "status": "todo"
-  },
-  {
-   "n": 4,
-   "id": "ep004",
-   "topic": "Learn Vegetable Names",
-   "format": "learn",
-   "keyword": "vegetables names for kids",
-   "status": "todo"
-  },
-  {
-   "n": 5,
-   "id": "ep005",
-   "topic": "Guess the Vehicle by its Shadow",
-   "format": "shadow",
-   "keyword": "vehicles for kids",
-   "status": "rendered",
-   "series": "Guess with Kiddo",
-   "style": "hook: no intro, 4 rounds, ~60s"
-  },
-  {
-   "n": 6,
-   "id": "ep006",
-   "topic": "Who Lives Here? Animal Homes",
-   "format": "clues",
-   "keyword": "animal homes for kids",
-   "status": "published",
-   "series": "Guess with Kiddo",
-   "youtube_url": "https://www.youtube.com/shorts/LrojVmbLoSI"
-  },
-  {
-   "n": 7,
-   "id": "ep007",
-   "topic": "Learn Fruit Names",
-   "format": "learn",
-   "keyword": "fruits names for kids",
-   "status": "todo"
-  },
-  {
-   "n": 8,
-   "id": "ep008",
-   "topic": "Mega Quiz #1",
-   "format": "shadow",
-   "keyword": "guessing game for kids",
-   "status": "todo"
-  },
-  {
-   "n": 9,
-   "id": "ep009",
-   "topic": "Count the Animals",
-   "format": "count",
-   "keyword": "counting for toddlers",
-   "status": "todo"
-  },
-  {
-   "n": 10,
-   "id": "ep010",
-   "topic": "Guess the Sea Animal Shadow",
-   "format": "shadow",
-   "keyword": "sea animals for kids",
-   "status": "published",
-   "series": "Guess with Kiddo",
-   "style": "hook: no intro, 4 rounds, ~63s",
-   "scheduled_for": "2026-10-16T23:26+05:30",
-   "metricool_uuid": "8978194359773908908",
-   "youtube_url": "https://www.youtube.com/shorts/FcHqeV-1RuA"
-  },
-  {
-   "n": 11,
-   "id": "ep011",
-   "topic": "What Do We Wear? (weather clues)",
-   "format": "clues",
-   "keyword": "clothes names for kids",
-   "status": "rendered",
-   "series": "Guess with Kiddo",
-   "style": "hook: no intro, 4 rounds, ~66s"
-  },
-  {
-   "n": 12,
-   "id": "ep012",
-   "topic": "Learn Shapes",
-   "format": "learn",
-   "keyword": "shapes for kids",
-   "status": "todo"
-  },
-  {
-   "n": 13,
-   "id": "ep013",
-   "topic": "Guess the Insect Shadow",
-   "format": "shadow",
-   "keyword": "insects for kids",
-   "status": "todo"
-  },
-  {
-   "n": 14,
-   "id": "ep014",
-   "topic": "Count the Toys",
-   "format": "count",
-   "keyword": "learn numbers for kids",
-   "status": "todo"
-  },
-  {
-   "n": 15,
-   "id": "ep015",
-   "topic": "Mega Quiz #2",
-   "format": "clues",
-   "keyword": "quiz for kids",
-   "status": "todo"
-  },
-  {
-   "n": 16,
-   "id": "ep016",
-   "topic": "Learn Musical Instruments",
-   "format": "learn",
-   "keyword": "musical instruments for kids",
-   "status": "todo"
-  },
-  {
-   "n": 17,
-   "id": "ep017",
-   "topic": "Guess the Farm Animal Shadow",
-   "format": "shadow",
-   "keyword": "farm animals for kids",
-   "status": "todo"
-  },
-  {
-   "n": 18,
-   "id": "ep018",
-   "topic": "Which Sport? (equipment clues)",
-   "format": "clues",
-   "keyword": "sports for kids",
-   "status": "todo"
-  },
-  {
-   "n": 19,
-   "id": "ep019",
-   "topic": "Count the Sweets",
-   "format": "count",
-   "keyword": "counting game for kids",
-   "status": "todo"
-  },
-  {
-   "n": 20,
-   "id": "ep020",
-   "topic": "Learn Body Parts",
-   "format": "learn",
-   "keyword": "body parts for kids",
-   "status": "todo"
-  },
-  {
-   "n": 21,
-   "id": "ep021",
-   "topic": "Guess the Bird Shadow",
-   "format": "shadow",
-   "keyword": "birds names for kids",
-   "status": "todo"
-  },
-  {
-   "n": 22,
-   "id": "ep022",
-   "topic": "Mega Quiz #3",
-   "format": "shadow",
-   "keyword": "brain games for kids",
-   "status": "todo"
-  },
-  {
-   "n": 23,
-   "id": "ep023",
-   "topic": "Where Does It Go? (room clues)",
-   "format": "clues",
-   "keyword": "things in the house for kids",
-   "status": "todo"
-  },
-  {
-   "n": 24,
-   "id": "ep024",
-   "topic": "Learn Indian Fruits & Vegetables",
-   "format": "learn",
-   "keyword": "fruits and vegetables names",
-   "status": "todo"
-  },
-  {
-   "n": 25,
-   "id": "ep025",
-   "topic": "Count the Vehicles",
-   "format": "count",
-   "keyword": "numbers 1 to 10",
-   "status": "todo"
-  },
-  {
-   "n": 26,
-   "id": "ep026",
-   "topic": "Guess the Jungle Animal Shadow",
-   "format": "shadow",
-   "keyword": "wild animals for kids",
-   "status": "todo"
-  },
-  {
-   "n": 27,
-   "id": "ep027",
-   "topic": "Learn Weather Words",
-   "format": "learn",
-   "keyword": "weather for kids",
-   "status": "todo"
-  },
-  {
-   "n": 28,
-   "id": "ep028",
-   "topic": "Who Eats What? (animal food)",
-   "format": "clues",
-   "keyword": "animals and their food",
-   "status": "todo"
-  },
-  {
-   "n": 29,
-   "id": "ep029",
-   "topic": "Mega Quiz #4",
-   "format": "shadow",
-   "keyword": "guess the picture",
-   "status": "todo"
-  },
-  {
-   "n": 30,
-   "id": "ep030",
-   "topic": "Learn Space Words",
-   "format": "learn",
-   "keyword": "solar system for kids",
-   "status": "todo"
-  }
- ],
- "series_abc": {
-  "name": "ABC Game with Kiddo",
-  "format": "letter",
-  "note": "Second series. One part = 4 letters, 2 picture choices per letter, hook style ~60 s.",
+  "_rules": [
+    "Pick the first entry with status 'todo'. Never repeat a topic already 'scheduled' or 'published'.",
+    "Never use the same format two days in a row; if the next 'todo' breaks this, take the next one that doesn't.",
+    "8 items per episode (count: 6-8 items with counts 1-10). Keep each video under 2:58 so it stays a Short.",
+    "Titles: '<Hook>! <2 emoji> <Main keyword> for Kids | <Second keyword> | Unique Kiddo' (max 100 chars).",
+    "Every 7th episode: a 'Mega Quiz' mixing items from the last 6 topics (reuses winners, boosts session time).",
+    "Short style (from ep005): open straight on round 1 with hook_text (intro: []), 4 rounds, think_seconds 3, no fact lines, bye: false — aim for 45-65 s."
+  ],
   "plan": [
-   {
-    "id": "abc01",
-    "letters": "A-D",
-    "status": "rendered"
-   },
-   {
-    "id": "abc02",
-    "letters": "E-H",
-    "status": "todo"
-   },
-   {
-    "id": "abc03",
-    "letters": "I-L",
-    "status": "todo"
-   },
-   {
-    "id": "abc04",
-    "letters": "M-P",
-    "status": "todo"
-   },
-   {
-    "id": "abc05",
-    "letters": "Q-T",
-    "status": "todo"
-   },
-   {
-    "id": "abc06",
-    "letters": "U-X",
-    "status": "todo"
-   },
-   {
-    "id": "abc07",
-    "letters": "Y-Z + review",
-    "status": "todo"
-   }
-  ]
- }
+    {
+      "n": 1,
+      "id": "ep001",
+      "topic": "Guess the Job (community helpers)",
+      "format": "clues",
+      "keyword": "community helpers for kids",
+      "status": "published"
+    },
+    {
+      "n": 2,
+      "id": "ep002",
+      "topic": "Guess the Animal by its Shadow",
+      "format": "shadow",
+      "keyword": "animal shadow game",
+      "status": "published",
+      "scheduled_for": "2026-10-15T16:00+05:30",
+      "metricool_uuid": "5931635678831266372",
+      "youtube_url": "https://www.youtube.com/shorts/3Jw9jb8cVws"
+    },
+    {
+      "n": 3,
+      "id": "ep003",
+      "topic": "Count the Fruits 1 to 10",
+      "format": "count",
+      "keyword": "counting 1 to 10 for kids",
+      "status": "todo"
+    },
+    {
+      "n": 4,
+      "id": "ep004",
+      "topic": "Learn Vegetable Names",
+      "format": "learn",
+      "keyword": "vegetables names for kids",
+      "status": "todo"
+    },
+    {
+      "n": 5,
+      "id": "ep005",
+      "topic": "Guess the Vehicle by its Shadow",
+      "format": "shadow",
+      "keyword": "vehicles for kids",
+      "status": "rendered",
+      "series": "Guess with Kiddo",
+      "style": "hook: no intro, 4 rounds, ~60s"
+    },
+    {
+      "n": 6,
+      "id": "ep006",
+      "topic": "Who Lives Here? Animal Homes",
+      "format": "clues",
+      "keyword": "animal homes for kids",
+      "status": "published",
+      "series": "Guess with Kiddo",
+      "youtube_url": "https://www.youtube.com/shorts/LrojVmbLoSI"
+    },
+    {
+      "n": 7,
+      "id": "ep007",
+      "topic": "Learn Fruit Names",
+      "format": "learn",
+      "keyword": "fruits names for kids",
+      "status": "todo"
+    },
+    {
+      "n": 8,
+      "id": "ep008",
+      "topic": "Mega Quiz #1",
+      "format": "shadow",
+      "keyword": "guessing game for kids",
+      "status": "todo"
+    },
+    {
+      "n": 9,
+      "id": "ep009",
+      "topic": "Count the Animals",
+      "format": "count",
+      "keyword": "counting for toddlers",
+      "status": "todo"
+    },
+    {
+      "n": 10,
+      "id": "ep010",
+      "topic": "Guess the Sea Animal Shadow",
+      "format": "shadow",
+      "keyword": "sea animals for kids",
+      "status": "published",
+      "series": "Guess with Kiddo",
+      "style": "hook: no intro, 4 rounds, ~63s",
+      "scheduled_for": "2026-10-16T23:26+05:30",
+      "metricool_uuid": "8978194359773908908",
+      "youtube_url": "https://www.youtube.com/shorts/FcHqeV-1RuA"
+    },
+    {
+      "n": 11,
+      "id": "ep011",
+      "topic": "What Do We Wear? (weather clues)",
+      "format": "clues",
+      "keyword": "clothes names for kids",
+      "status": "rendered",
+      "series": "Guess with Kiddo",
+      "style": "hook: no intro, 4 rounds, ~66s"
+    },
+    {
+      "n": 12,
+      "id": "ep012",
+      "topic": "Learn Shapes",
+      "format": "learn",
+      "keyword": "shapes for kids",
+      "status": "todo"
+    },
+    {
+      "n": 13,
+      "id": "ep013",
+      "topic": "Guess the Insect Shadow",
+      "format": "shadow",
+      "keyword": "insects for kids",
+      "status": "todo"
+    },
+    {
+      "n": 14,
+      "id": "ep014",
+      "topic": "Count the Toys",
+      "format": "count",
+      "keyword": "learn numbers for kids",
+      "status": "todo"
+    },
+    {
+      "n": 15,
+      "id": "ep015",
+      "topic": "Mega Quiz #2",
+      "format": "clues",
+      "keyword": "quiz for kids",
+      "status": "todo"
+    },
+    {
+      "n": 16,
+      "id": "ep016",
+      "topic": "Learn Musical Instruments",
+      "format": "learn",
+      "keyword": "musical instruments for kids",
+      "status": "todo"
+    },
+    {
+      "n": 17,
+      "id": "ep017",
+      "topic": "Guess the Farm Animal Shadow",
+      "format": "shadow",
+      "keyword": "farm animals for kids",
+      "status": "todo"
+    },
+    {
+      "n": 18,
+      "id": "ep018",
+      "topic": "Which Sport? (equipment clues)",
+      "format": "clues",
+      "keyword": "sports for kids",
+      "status": "todo"
+    },
+    {
+      "n": 19,
+      "id": "ep019",
+      "topic": "Count the Sweets",
+      "format": "count",
+      "keyword": "counting game for kids",
+      "status": "todo"
+    },
+    {
+      "n": 20,
+      "id": "ep020",
+      "topic": "Learn Body Parts",
+      "format": "learn",
+      "keyword": "body parts for kids",
+      "status": "todo"
+    },
+    {
+      "n": 21,
+      "id": "ep021",
+      "topic": "Guess the Bird Shadow",
+      "format": "shadow",
+      "keyword": "birds names for kids",
+      "status": "todo"
+    },
+    {
+      "n": 22,
+      "id": "ep022",
+      "topic": "Mega Quiz #3",
+      "format": "shadow",
+      "keyword": "brain games for kids",
+      "status": "todo"
+    },
+    {
+      "n": 23,
+      "id": "ep023",
+      "topic": "Where Does It Go? (room clues)",
+      "format": "clues",
+      "keyword": "things in the house for kids",
+      "status": "todo"
+    },
+    {
+      "n": 24,
+      "id": "ep024",
+      "topic": "Learn Indian Fruits & Vegetables",
+      "format": "learn",
+      "keyword": "fruits and vegetables names",
+      "status": "todo"
+    },
+    {
+      "n": 25,
+      "id": "ep025",
+      "topic": "Count the Vehicles",
+      "format": "count",
+      "keyword": "numbers 1 to 10",
+      "status": "todo"
+    },
+    {
+      "n": 26,
+      "id": "ep026",
+      "topic": "Guess the Jungle Animal Shadow",
+      "format": "shadow",
+      "keyword": "wild animals for kids",
+      "status": "todo"
+    },
+    {
+      "n": 27,
+      "id": "ep027",
+      "topic": "Learn Weather Words",
+      "format": "learn",
+      "keyword": "weather for kids",
+      "status": "todo"
+    },
+    {
+      "n": 28,
+      "id": "ep028",
+      "topic": "Who Eats What? (animal food)",
+      "format": "clues",
+      "keyword": "animals and their food",
+      "status": "todo"
+    },
+    {
+      "n": 29,
+      "id": "ep029",
+      "topic": "Mega Quiz #4",
+      "format": "shadow",
+      "keyword": "guess the picture",
+      "status": "todo"
+    },
+    {
+      "n": 30,
+      "id": "ep030",
+      "topic": "Learn Space Words",
+      "format": "learn",
+      "keyword": "solar system for kids",
+      "status": "todo"
+    }
+  ],
+  "series_abc": {
+    "name": "ABC Game with Kiddo",
+    "format": "letter",
+    "note": "Second series. One part = 4 letters, 2 picture choices per letter, hook style ~60 s.",
+    "plan": [
+      {
+        "id": "abc01",
+        "letters": "A-D",
+        "status": "rendered"
+      },
+      {
+        "id": "abc02",
+        "letters": "E-H",
+        "status": "todo"
+      },
+      {
+        "id": "abc03",
+        "letters": "I-L",
+        "status": "todo"
+      },
+      {
+        "id": "abc04",
+        "letters": "M-P",
+        "status": "todo"
+      },
+      {
+        "id": "abc05",
+        "letters": "Q-T",
+        "status": "todo"
+      },
+      {
+        "id": "abc06",
+        "letters": "U-X",
+        "status": "todo"
+      },
+      {
+        "id": "abc07",
+        "letters": "Y-Z + review",
+        "status": "todo"
+      }
+    ]
+  }
 }
