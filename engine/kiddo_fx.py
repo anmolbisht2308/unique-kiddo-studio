@@ -30,7 +30,7 @@ def lerp_col(a, b, u):
 
 
 def kiddo_layer(s, t=0.0, eyes="normal", mouth="smile", arms="down", body=CORAL, look=(0.0, 0.0),
-                blink=True, cheeks=1.0):
+                blink=True, cheeks=1.0, star=True):
     k = s / 100.0
     Wc, Hc = int(2.6 * s), int(2.8 * s)
     img = Image.new("RGBA", (Wc, Hc), (0, 0, 0, 0))
@@ -67,10 +67,13 @@ def kiddo_layer(s, t=0.0, eyes="normal", mouth="smile", arms="down", body=CORAL,
     d.ellipse([p(-54, -66), p(-44, -46)], fill=hi)
     # star in the cup
     rot = math.sin(t * 2) * 8
+    if not star:
+        rot = None
     sy = -40 + math.sin(t * 3) * 3
-    d.polygon([p(x, y) for x, y in star_pts(0, sy + 3, 34, rot)], fill=(225, 165, 20))
-    d.polygon([p(x, y) for x, y in star_pts(0, sy, 34, rot)], fill=STAR)
-    d.ellipse([p(-8, sy - 6), p(-2, sy)], fill=(255, 240, 170))
+    if rot is not None:
+        d.polygon([p(x, y) for x, y in star_pts(0, sy + 3, 34, rot)], fill=(225, 165, 20))
+        d.polygon([p(x, y) for x, y in star_pts(0, sy, 34, rot)], fill=STAR)
+        d.ellipse([p(-8, sy - 6), p(-2, sy)], fill=(255, 240, 170))
     # eyes
     lx_, ly_ = look
     is_blink = blink and eyes == "normal" and (t % 3.4) > 3.25

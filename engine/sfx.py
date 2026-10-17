@@ -183,7 +183,38 @@ def float_up(dur=1.2):
     return .22 * _sweep(500, 1300, dur) * (0.6 + .4 * np.sin(2 * np.pi * 7 * t)) * np.sin(np.pi * t / dur)
 
 
-LIB = dict(pop=pop, tick=tick, ding=ding, boing=boing, slide_up=slide_up, slide_down=slide_down, whoosh=whoosh,
+def crash():
+    n = _noise(1.0)
+    c = (n - _lp(n, .3)) * _env(len(n), .002, 4) * .5
+    k = np.sin(2 * np.pi * 60 * _t(.5)) * np.exp(-8 * _t(.5)) * .6
+    c[:len(k)] += k
+    for j in range(5):  # clatter
+        s = int((.08 + j * .09) * SR); b = bonk() * (.5 - j * .08)
+        c[s:s + len(b)] += b[:len(c) - s]
+    return c
+
+
+def big_pop():
+    t = _t(.25)
+    return .6 * _noise(.25) * np.exp(-30 * t) + .4 * np.sin(2 * np.pi * (500 - 1400 * t) * t) * np.exp(-12 * t)
+
+
+def chew():
+    t = _t(.12)
+    return .25 * _lp(_noise(.12), .2) * np.sin(np.pi * t / .12) * 3
+
+
+def stretch(dur=2.2):
+    t = _t(dur)
+    f = 180 + 420 * (t / dur) ** 1.5
+    return .14 * np.sin(2 * np.pi * np.cumsum(f) / SR) * (0.7 + .3 * np.sin(2 * np.pi * 11 * t)) * np.minimum(1, t / .1)
+
+
+def splat():
+    return splash(.45) * 1.2
+
+
+LIB = dict(crash=crash, big_pop=big_pop, chew=chew, stretch=stretch, splat=splat, pop=pop, tick=tick, ding=ding, boing=boing, slide_up=slide_up, slide_down=slide_down, whoosh=whoosh,
            creak=creak, drumroll=lambda: drumroll(1.1), drumroll_long=lambda: drumroll(1.7, crash=True),
            trombone=trombone, fanfare=fanfare, sparkle=sparkle, sizzle=sizzle, splash=splash, brrr=brrr,
            pfft=pfft, bonk=bonk, roar=roar, buzz=buzz, float_up=float_up)

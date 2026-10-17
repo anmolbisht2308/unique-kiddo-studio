@@ -418,5 +418,68 @@
         "status": "todo"
       }
     ]
+  },
+  "series_toons": {
+    "name": "Kiddo Toons",
+    "format": "gag",
+    "engine": "python3 engine/gags.py episodes/<file>.json",
+    "audience": "general audience all-ages slapstick (no 'for kids' wording, no lessons) -> not made for kids, comments on; separate channel from Unique Kiddo",
+    "why": "Oct 2026 outlier research: breakout animated Shorts from <3K-sub channels are 8-16 s, wordless, one gag, motion-heavy, loopable (e.g. penguin-into-sand 16 s 4.4M views on 2.1K subs).",
+    "test": "2 posts/day (12:00 + 19:00 IST) for 14 days; after 48 h read 'Viewed vs swiped away' per Short; drop gag types <60%, double those >75%.",
+    "plan": [
+      {
+        "id": "gag01",
+        "gag": "door",
+        "title": "He Should Have Read the Sign",
+        "status": "rendered"
+      },
+      {
+        "id": "gag02",
+        "gag": "sneeze",
+        "title": "Worst Sneeze Ever",
+        "status": "rendered"
+      },
+      {
+        "id": "gag03",
+        "gag": "bubble",
+        "title": "Bubble Gum Went Wrong",
+        "status": "rendered"
+      },
+      {
+        "id": "gag04",
+        "idea": "Kiddo vs a chair that keeps moving when he sits",
+        "status": "todo"
+      },
+      {
+        "id": "gag05",
+        "idea": "Ketchup bottle won't squeeze, then floods the room",
+        "status": "todo"
+      },
+      {
+        "id": "gag06",
+        "idea": "Kiddo tries to catch his falling star, bonks into everything",
+        "status": "todo"
+      },
+      {
+        "id": "gag07",
+        "idea": "Spring on the floor: one tiny hop, launched to the ceiling",
+        "status": "todo"
+      },
+      {
+        "id": "gag08",
+        "idea": "Kiddo stacks blocks perfectly, a fly lands on top",
+        "status": "todo"
+      },
+      {
+        "id": "gag09",
+        "idea": "Ice floor: walk, slide, spin, wall",
+        "status": "todo"
+      },
+      {
+        "id": "gag10",
+        "idea": "Balloon pump: inflates himself instead",
+        "status": "todo"
+      }
+    ]
   }
 }
