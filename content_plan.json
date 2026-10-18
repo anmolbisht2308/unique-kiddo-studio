@@ -124,10 +124,12 @@
     {
       "n": 13,
       "id": "ep013",
-      "topic": "Guess the Insect Shadow",
+      "topic": "Guess the Bug Shadow (insects)",
       "format": "shadow",
       "keyword": "insects for kids",
-      "status": "todo"
+      "status": "rendered",
+      "series": "Guess with Kiddo",
+      "style": "hook: no intro, 4 rounds, ~65s"
     },
     {
       "n": 14,

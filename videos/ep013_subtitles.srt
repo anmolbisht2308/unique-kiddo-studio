@@ -1,0 +1,68 @@
+1
+00:00:00,900 --> 00:00:03,342
+Who is buzzing in the garden? Can you guess?
+
+2
+00:00:03,742 --> 00:00:05,945
+It goes buzz buzz and makes yummy honey!
+
+3
+00:00:09,745 --> 00:00:10,981
+Yes! It's a bee!
+
+4
+00:00:11,481 --> 00:00:12,886
+Say it with me! Bee!
+
+5
+00:00:16,186 --> 00:00:17,249
+Who is this shadow?
+
+6
+00:00:17,649 --> 00:00:20,053
+It is tiny and red with little black spots!
+
+7
+00:00:23,853 --> 00:00:25,336
+Yes! It's a ladybug!
+
+8
+00:00:25,836 --> 00:00:27,559
+Say it with me! Ladybug!
+
+9
+00:00:30,859 --> 00:00:31,923
+Who is this shadow?
+
+10
+00:00:32,323 --> 00:00:34,534
+It is very small and very, very strong!
+
+11
+00:00:38,334 --> 00:00:39,590
+Yes! It's an ant!
+
+12
+00:00:40,090 --> 00:00:41,469
+Say it with me! Ant!
+
+13
+00:00:44,769 --> 00:00:46,519
+Last one! Who is this shadow?
+
+14
+00:00:46,919 --> 00:00:50,392
+It has big, pretty wings and flies from flower to flower!
+
+15
+00:00:54,192 --> 00:00:55,698
+Yes! It's a butterfly!
+
+16
+00:00:56,198 --> 00:00:57,956
+Say it with me! Butterfly!
+
+17
+00:01:00,956 --> 00:01:03,452
+Wow! You got them all! How many did you guess?
+

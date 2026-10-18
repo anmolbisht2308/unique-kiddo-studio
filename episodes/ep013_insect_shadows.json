@@ -1,0 +1,37 @@
+{
+  "id": "ep013",
+  "format": "shadow",
+  "series": "Guess with Kiddo",
+  "title_screen": ["GUESS THE", "BUG SHADOW!"],
+  "hook_text": "GUESS THE SHADOW!",
+  "round_word": "SHADOW",
+  "intro": [],
+  "think_seconds": 3,
+  "repeat_seconds": 1.2,
+  "bye": false,
+  "items": [
+    {"name": "Bee", "say": "a bee", "emoji": "🐝",
+     "ask": "Who is buzzing in the garden? Can you guess?",
+     "hint": "It goes buzz buzz and makes yummy honey!",
+     "ask_screen": "Who is\nthis shadow?"},
+    {"name": "Ladybug", "say": "a ladybug", "emoji": "🐞",
+     "ask": "Who is this shadow?",
+     "hint": "It is tiny and red with little black spots!",
+     "ask_screen": "Who is\nthis shadow?"},
+    {"name": "Ant", "say": "an ant", "emoji": "🐜",
+     "ask": "Who is this shadow?",
+     "hint": "It is very small and very, very strong!",
+     "ask_screen": "Who is\nthis shadow?"},
+    {"name": "Butterfly", "say": "a butterfly", "emoji": "🦋",
+     "ask": "Last one! Who is this shadow?",
+     "hint": "It has big, pretty wings and flies from flower to flower!",
+     "ask_screen": "Who is\nthis shadow?"}
+  ],
+  "outro_screen": "You got them all!\nHow many did\nYOU guess?",
+  "outro": ["Wow! You got them all! How many did you guess?"],
+  "seo": {
+    "title": "Guess the Bug Shadow! 🐝🐞 Insects for Kids | Shadow Game for Kids | Unique Kiddo",
+    "description": "Can your little one guess the bug from its shadow? 🤔 Look, listen to the clue, and shout the answer with Kiddo!\n\nA quick insects guessing game for kids. Children learn 4 insect names:\n🐝 Bee\n🐞 Ladybug\n🐜 Ant\n🦋 Butterfly\n\nEach round has think time so kids can guess, and a \"say it with me\" pause to practise new English words. Great for toddlers, preschool and kindergarten (ages 2–6).\n\n⭐ Subscribe to Unique Kiddo for more fun learning games: animals, vehicles, letters, numbers and more!\n\nVoice: Kokoro TTS (Apache 2.0) · Emoji art: Noto Emoji (Apache 2.0)\n\n#insectsforkids #shadowgame #kidslearning",
+    "tags": ["insects for kids", "bugs for kids", "guess the insect", "insect shadow game", "shadow game for kids", "insect names for kids", "guess the shadow", "guessing game for kids", "kids learning videos", "preschool learning", "toddler learning", "learn english for kids", "educational videos for kids", "unique kiddo", "kiddo"]
+  }
+}
