@@ -1,0 +1,68 @@
+1
+00:00:00,900 --> 00:00:03,085
+Look! A big goal net and running shoes!
+
+2
+00:00:03,485 --> 00:00:05,432
+Which sport is it? Can you guess?
+
+3
+00:00:09,232 --> 00:00:11,520
+Yes! It's football! Kick, kick, goal!
+
+4
+00:00:12,020 --> 00:00:13,569
+Say it with me! Football!
+
+5
+00:00:16,869 --> 00:00:18,911
+Look! Goggles and lots of water!
+
+6
+00:00:19,311 --> 00:00:20,414
+Which sport is it?
+
+7
+00:00:24,214 --> 00:00:26,396
+Yes! It's swimming! Splash, splash!
+
+8
+00:00:26,896 --> 00:00:28,428
+Say it with me! Swimming!
+
+9
+00:00:31,728 --> 00:00:33,998
+Look! A helmet and a long, long road!
+
+10
+00:00:34,398 --> 00:00:35,501
+Which sport is it?
+
+11
+00:00:39,301 --> 00:00:41,412
+Yes! It's cycling! Pedal, pedal!
+
+12
+00:00:41,912 --> 00:00:43,576
+Say it with me! Cycling!
+
+13
+00:00:46,876 --> 00:00:49,084
+Look! Cold snow on a tall mountain!
+
+14
+00:00:49,484 --> 00:00:51,157
+Last one! Which sport is it?
+
+15
+00:00:54,957 --> 00:00:56,518
+Yes! It's skiing! Whoosh!
+
+16
+00:00:57,018 --> 00:00:58,551
+Say it with me! Skiing!
+
+17
+00:01:01,551 --> 00:01:04,414
+Wow! You got them all! Which sport do you like best?
+

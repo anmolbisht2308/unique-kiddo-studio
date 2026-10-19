@@ -1,0 +1,78 @@
+{
+  "id": "ep018",
+  "format": "clues",
+  "series": "Guess with Kiddo",
+  "title_screen": ["WHICH", "SPORT?"],
+  "hook_text": "WHICH SPORT IS IT?",
+  "round_word": "SPORT",
+  "intro": [],
+  "think_seconds": 3,
+  "repeat_seconds": 1.2,
+  "bye": false,
+  "items": [
+    {
+      "name": "Football",
+      "say": "football",
+      "emoji": "⚽",
+      "clues": ["🥅", "👟"],
+      "clue_text": "A big goal net and running shoes",
+      "ask": "Which sport is it? Can you guess?",
+      "ask_screen": "Which\nsport?",
+      "reveal_line": "Yes! It's football! Kick, kick, goal!"
+    },
+    {
+      "name": "Swimming",
+      "say": "swimming",
+      "emoji": "🏊",
+      "clues": ["🥽", "💧"],
+      "clue_text": "Goggles and lots of water",
+      "ask": "Which sport is it?",
+      "ask_screen": "Which\nsport?",
+      "reveal_line": "Yes! It's swimming! Splash, splash!"
+    },
+    {
+      "name": "Cycling",
+      "say": "cycling",
+      "emoji": "🚴",
+      "clues": ["⛑️", "🛣️"],
+      "clue_text": "A helmet and a long, long road",
+      "ask": "Which sport is it?",
+      "ask_screen": "Which\nsport?",
+      "reveal_line": "Yes! It's cycling! Pedal, pedal!"
+    },
+    {
+      "name": "Skiing",
+      "say": "skiing",
+      "emoji": "⛷️",
+      "clues": ["❄️", "🏔️"],
+      "clue_text": "Cold snow on a tall mountain",
+      "ask": "Last one! Which sport is it?",
+      "ask_screen": "Which\nsport?",
+      "reveal_line": "Yes! It's skiing! Whoosh!"
+    }
+  ],
+  "outro_screen": "You got them all!\nWhich sport do\nYOU like?",
+  "outro": [
+    "Wow! You got them all! Which sport do you like best?"
+  ],
+  "seo": {
+    "title": "Which Sport Is It? ⚽🏊 Sports for Kids | Guessing Game for Kids | Unique Kiddo",
+    "description": "Can your little one guess the sport from two clues? 🤔 Look at the clues, think, and shout the answer with Kiddo!\n\nA quick sports guessing game for kids. Children learn 4 sports names:\n⚽ Football (goal net + running shoes)\n🏊 Swimming (goggles + water)\n🚴 Cycling (helmet + road)\n⛷️ Skiing (snow + mountain)\n\nEach round has think time so kids can guess, and a \"say it with me\" pause to practise new English words. Great for toddlers, preschool and kindergarten (ages 2–6).\n\n⭐ Subscribe to Unique Kiddo for more fun learning games: animals, vehicles, clothes, letters and more!\n\nVoice: Kokoro TTS (Apache 2.0) · Emoji art: Noto Emoji (Apache 2.0)\n\n#sportsforkids #guessinggame #kidslearning",
+    "tags": [
+      "sports for kids",
+      "sports names for kids",
+      "which sport",
+      "guess the sport",
+      "sports guessing game",
+      "guessing game for kids",
+      "guess with kiddo",
+      "kids learning videos",
+      "preschool learning",
+      "toddler learning",
+      "learn english for kids",
+      "educational videos for kids",
+      "unique kiddo",
+      "kiddo"
+    ]
+  }
+}

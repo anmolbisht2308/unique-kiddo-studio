@@ -169,7 +169,9 @@
       "topic": "Which Sport? (equipment clues)",
       "format": "clues",
       "keyword": "sports for kids",
-      "status": "todo"
+      "status": "rendered",
+      "series": "Guess with Kiddo",
+      "style": "hook: no intro, 4 rounds, ~66s"
     },
     {
       "n": 19,
