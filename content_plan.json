@@ -169,9 +169,11 @@
       "topic": "Which Sport? (equipment clues)",
       "format": "clues",
       "keyword": "sports for kids",
-      "status": "rendered",
+      "status": "scheduled",
       "series": "Guess with Kiddo",
-      "style": "hook: no intro, 4 rounds, ~66s"
+      "style": "hook: no intro, 4 rounds, ~66s",
+      "scheduled_for": "2026-10-19T19:05+05:30",
+      "metricool_uuid": "2936707754849223238"
     },
     {
       "n": 19,
