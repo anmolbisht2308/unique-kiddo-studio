@@ -406,7 +406,151 @@ def gag_bubble(tl):
     return frame
 
 
-GAGS = {"door": gag_door, "sneeze": gag_sneeze, "bubble": gag_bubble}
+# ================================================================== GAG 4: floor spring
+SPX, SPR = 660, 175  # spring x, rest height
+
+
+def spring_draw(d, x, h, tilt=0.0):
+    base, top = FEET + 6, FEET + 6 - h
+    d.rounded_rectangle([x - 115, base - 22, x + 115, base + 8], radius=8, fill=(120, 125, 140), outline=DARK, width=4)
+    n = 6; pts = []
+    for j in range(n * 2 + 1):
+        yy = base - 18 - (h - 36) * j / (n * 2)
+        pts.append((x + (85 if j % 2 else -85) + tilt * (j / (n * 2)) * 40, yy))
+    d.line(pts, fill=DARK, width=24, joint="curve")
+    d.line(pts, fill=(190, 198, 214), width=15, joint="curve")
+    tx = x + tilt * 40
+    d.rounded_rectangle([tx - 115, top - 8, tx + 115, top + 22], radius=8, fill=(225, 70, 60), outline=DARK, width=4)
+
+
+def gag_spring(tl):
+    T = 11.0
+    tl.fx(1.55, "boing"); tl.fx(1.95, "boing")
+    tl.vocal(2.25, "Hehehe!", 1.3)
+    tl.fx(2.8, "boing"); tl.fx(2.82, "whoosh")
+    tl.fx(3.25, "bonk"); tl.fx(3.3, "crash")
+    tl.fx(4.2, "slide_down"); tl.vocal(4.25, "Aaah!", 1.3)
+    tl.fx(4.62, "boing"); tl.fx(4.64, "whoosh")
+    tl.fx(5.05, "bonk")
+    tl.fx(5.45, "boing"); tl.fx(5.75, "boing")
+    tl.fx(5.9, "slide_down"); tl.fx(6.3, "splat"); tl.fx(6.32, "bonk")
+    tl.fx(7.65, "pop")
+    tl.fx(8.35, "boing")
+    tl.vocal(8.9, "Hmph!", 1.25)
+    tl.fx(9.55, "boing"); tl.fx(9.95, "boing")
+    tl.fx(10.3, "ding")
+    tl.duration = T
+    rest = FEET - SPR
+
+    def frame(t):
+        img = Image.new("RGBA", (W, H)); background(img, wall=(255, 236, 200), floor=(222, 190, 150))
+        d = ImageDraw.Draw(img)
+        # ceiling cracks after the bonks
+        if t >= 3.25 and t < 10.9:
+            for k_, cx in enumerate((640, 600)):
+                if t >= (3.25 if k_ == 0 else 5.05):
+                    d.line([(cx - 60, 0), (cx - 20, 40), (cx + 10, 15), (cx + 50, 60), (cx + 80, 20)], fill=DARK, width=7)
+        # spring state
+        sx_, h, tilt = SPX, SPR, 0.0
+        if 1.55 <= t < 2.2:
+            u = (t - 1.55) % .4; h = SPR - 45 * math.sin(math.pi * clamp(u / .15)) if u < .15 else SPR
+        elif 2.2 <= t < 2.8:
+            h = SPR - 110 * ease((t - 2.2) / .6)
+        elif 2.8 <= t < 4.2:
+            h = SPR + 50 * math.exp(-(t - 2.8) * 4) * math.sin((t - 2.8) * 30); tilt = .6 * math.exp(-(t - 2.8) * 3) * math.sin((t - 2.8) * 18)
+        elif 4.55 <= t < 4.62:
+            h = SPR - 120 * ease((t - 4.55) / .07)
+        elif 4.62 <= t < 5.4:
+            h = SPR + 50 * math.exp(-(t - 4.62) * 4) * math.sin((t - 4.62) * 30)
+        elif 5.4 <= t < 5.9:  # spring sneaks away (two hops)
+            q = (t - 5.4) / .5; sx_ = SPX + 300 * ease(q); h = SPR + 25 * abs(math.sin(q * 2 * math.pi))
+        elif 5.9 <= t < 9.5:
+            sx_ = SPX + 300
+            if 8.2 <= t < 8.6: h = SPR + 40 * math.sin(math.pi * (t - 8.2) / .4); tilt = -.5 * math.sin(math.pi * (t - 8.2) / .4)
+        elif 9.5 <= t < 10.3:  # spring sneaks back
+            q = (t - 9.5) / .8; sx_ = SPX + 300 * (1 - ease(q)); h = SPR + 30 * abs(math.sin(q * 2 * math.pi))
+        spring_y_off = 0
+        if 5.4 <= t < 5.9 or 9.5 <= t < 10.3:
+            q = ((t - 5.4) / .5) if t < 5.9 else ((t - 9.5) / .8)
+            spring_y_off = -70 * abs(math.sin(q * 2 * math.pi))
+        # kiddo
+        x, y, sx, sy, rot = 260., FEET, 1., 1., 0.
+        P = dict(eyes="normal", mouth="smile", look=(.6, .3))
+        shake = 0; speed = False; dizzy = False; show = True
+        if t < 1.0:
+            y = FEET - 8 * abs(math.sin(t * 6))
+            P.update(eyes="wide" if t > .5 else "normal", mouth="o" if t > .5 else "smile")
+        elif t < 1.55:
+            q = (t - 1.0) / .55; x = 260 + (SPX - 260) * ease(q); y = FEET + (rest - FEET) * q - 180 * math.sin(math.pi * q)
+            P.update(eyes="happy", mouth="open", arms="up")
+        elif t < 2.2:
+            x = SPX; u = (t - 1.55) % .4; hop = 70 * math.sin(math.pi * clamp((u - .15) / .25)) if u >= .15 else 0
+            y = FEET - h - hop; P.update(eyes="happy", mouth="open", arms="up")
+        elif t < 2.8:
+            x = SPX; y = FEET - h; q = ease((t - 2.2) / .6); sx = 1 + .15 * q; sy = 1 - .2 * q
+            P.update(eyes="squint", mouth="smile", arms="down")
+        elif t < 3.1:
+            x = SPX; q = ease_in((t - 2.8) / .3); y = FEET - SPR - 2200 * q; sx = .75; sy = 1.4
+            P.update(eyes="wide", mouth="scream", arms="up"); speed = True
+        elif t < 4.2:
+            show = False; shake = 14 * math.exp(-(t - 3.25) * 7) if t >= 3.25 else 0
+        elif t < 4.62:
+            x = SPX; q = ease_in((t - 4.2) / .4); y = -300 + (FEET - SPR + 300) * q; sx = .85; sy = 1.2
+            P.update(eyes="x", mouth="scream", arms="up")
+        elif t < 4.92:
+            x = SPX; q = ease_in((t - 4.62) / .3); y = FEET - SPR - 2200 * q; sx = .75; sy = 1.4
+            P.update(eyes="wide", mouth="scream", arms="up"); speed = True
+        elif t < 5.9:
+            show = False; shake = 14 * math.exp(-(t - 5.05) * 7) if t >= 5.05 else 0
+        elif t < 6.3:
+            x = SPX; q = ease_in((t - 5.9) / .4); y = -300 + (FEET + 300) * q; sx = .85; sy = 1.2
+            P.update(eyes="wide", mouth="scream", arms="up", look=(.8, .4))
+        elif t < 7.65:
+            x = SPX; u = t - 6.3; wob = math.sin(u * 18) * math.exp(-u * 2)
+            sx = 1.7 + .08 * wob; sy = .28 - .03 * wob; dizzy = True
+            P.update(eyes="dizzy", mouth="wavy"); shake = 16 * math.exp(-u * 7)
+        elif t < 8.0:
+            x = SPX; q = (t - 7.65) / .35; ov = math.sin(q * math.pi * 2.5) * math.exp(-q * 3)
+            sx = 1.7 - .7 * ease(q * 1.6) - .2 * ov; sy = .28 + .72 * ease(q * 1.6) + .15 * ov
+            P.update(eyes="wide", mouth="o")
+        elif t < 8.9:
+            x = SPX; P.update(eyes="squint", mouth="zigzag", look=(.9, .3))
+        elif t < 10.0:
+            q = ease((t - 8.9) / 1.1); x = SPX - (SPX - 260) * q; y = FEET - 14 * abs(math.sin(t * 11)) * (1 - q)
+            P.update(eyes="closed", mouth="frown", look=(-.6, 0))
+        elif t < 10.3:
+            x = 260; P.update(eyes="normal", mouth="frown", look=(-.6, 0))
+        else:
+            x = 260; P.update(eyes="wide", mouth="o", look=(.6, .3))
+            if t > 10.7: P.update(eyes="normal", mouth="smile")
+        # draw spring (behind kiddo when he stands on it)
+        sp = Image.new("RGBA", (W, H), (0, 0, 0, 0)); spring_draw(ImageDraw.Draw(sp), sx_, h, tilt)
+        if spring_y_off:
+            sp2 = Image.new("RGBA", (W, H), (0, 0, 0, 0)); sp2.paste(sp, (0, int(spring_y_off))); sp = sp2
+        shadow(img, sx_, -spring_y_off, w=110)
+        img.alpha_composite(sp)
+        if show and y > -700:
+            shadow(img, x, max(0, FEET - y), w=180 * sx)
+            kid(img, t, x, y, sx, sy, rot, **P)
+        d = ImageDraw.Draw(img)
+        if speed:
+            for j in range(5):
+                xx = x - 160 + j * 80
+                d.line([(xx, y + 60), (xx, y + 420)], fill=(255, 255, 255), width=12)
+        if 3.25 <= t < 4.6 or 5.05 <= t < 6.0:  # ceiling dust
+            t0 = 3.25 if t < 4.6 else 5.05
+            for j in range(10):
+                u = t - t0 - j * .04
+                if u > 0:
+                    px = SPX - 140 + j * 30 + 20 * math.sin(j * 3 + u * 4); py = 20 + 900 * u * u + 120 * u
+                    if py < FEET: d.ellipse([px - 9, py - 9, px + 9, py + 9], fill=(200, 185, 165), outline=(150, 135, 120))
+        if dizzy:
+            stars_ring(d, x, FEET - 168 * K * sy - 40, t, r=160)
+        return shake_img(img, shake, t)
+    return frame
+
+
+GAGS = {"door": gag_door, "sneeze": gag_sneeze, "bubble": gag_bubble, "spring": gag_spring}
 
 
 def main(ep_path, preview=None):
