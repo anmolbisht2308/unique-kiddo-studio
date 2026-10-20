@@ -1,505 +1,507 @@
 {
-  "_rules": [
-    "Pick the first entry with status 'todo'. Never repeat a topic already 'scheduled' or 'published'.",
-    "Never use the same format two days in a row; if the next 'todo' breaks this, take the next one that doesn't.",
-    "8 items per episode (count: 6-8 items with counts 1-10). Keep each video under 2:58 so it stays a Short.",
-    "Titles: '<Hook>! <2 emoji> <Main keyword> for Kids | <Second keyword> | Unique Kiddo' (max 100 chars).",
-    "Every 7th episode: a 'Mega Quiz' mixing items from the last 6 topics (reuses winners, boosts session time).",
-    "Short style (from ep005): open straight on round 1 with hook_text (intro: []), 4 rounds, think_seconds 3, no fact lines, bye: false — aim for 45-65 s."
+ "_rules": [
+  "Pick the first entry with status 'todo'. Never repeat a topic already 'scheduled' or 'published'.",
+  "Never use the same format two days in a row; if the next 'todo' breaks this, take the next one that doesn't.",
+  "8 items per episode (count: 6-8 items with counts 1-10). Keep each video under 2:58 so it stays a Short.",
+  "Titles: '<Hook>! <2 emoji> <Main keyword> for Kids | <Second keyword> | Unique Kiddo' (max 100 chars).",
+  "Every 7th episode: a 'Mega Quiz' mixing items from the last 6 topics (reuses winners, boosts session time).",
+  "Short style (from ep005): open straight on round 1 with hook_text (intro: []), 4 rounds, think_seconds 3, no fact lines, bye: false — aim for 45-65 s."
+ ],
+ "plan": [
+  {
+   "n": 1,
+   "id": "ep001",
+   "topic": "Guess the Job (community helpers)",
+   "format": "clues",
+   "keyword": "community helpers for kids",
+   "status": "published"
+  },
+  {
+   "n": 2,
+   "id": "ep002",
+   "topic": "Guess the Animal by its Shadow",
+   "format": "shadow",
+   "keyword": "animal shadow game",
+   "status": "published",
+   "scheduled_for": "2026-10-15T16:00+05:30",
+   "metricool_uuid": "5931635678831266372",
+   "youtube_url": "https://www.youtube.com/shorts/3Jw9jb8cVws"
+  },
+  {
+   "n": 3,
+   "id": "ep003",
+   "topic": "Count the Fruits 1 to 10",
+   "format": "count",
+   "keyword": "counting 1 to 10 for kids",
+   "status": "todo"
+  },
+  {
+   "n": 4,
+   "id": "ep004",
+   "topic": "Learn Vegetable Names",
+   "format": "learn",
+   "keyword": "vegetables names for kids",
+   "status": "todo"
+  },
+  {
+   "n": 5,
+   "id": "ep005",
+   "topic": "Guess the Vehicle by its Shadow",
+   "format": "shadow",
+   "keyword": "vehicles for kids",
+   "status": "rendered",
+   "series": "Guess with Kiddo",
+   "style": "hook: no intro, 4 rounds, ~60s"
+  },
+  {
+   "n": 6,
+   "id": "ep006",
+   "topic": "Who Lives Here? Animal Homes",
+   "format": "clues",
+   "keyword": "animal homes for kids",
+   "status": "published",
+   "series": "Guess with Kiddo",
+   "youtube_url": "https://www.youtube.com/shorts/LrojVmbLoSI"
+  },
+  {
+   "n": 7,
+   "id": "ep007",
+   "topic": "Learn Fruit Names",
+   "format": "learn",
+   "keyword": "fruits names for kids",
+   "status": "todo"
+  },
+  {
+   "n": 8,
+   "id": "ep008",
+   "topic": "Mega Quiz #1 (Mega Shadow Quiz)",
+   "format": "shadow",
+   "keyword": "guessing game for kids",
+   "status": "rendered",
+   "series": "Guess with Kiddo",
+   "style": "hook: no intro, 6 rounds, ~95s"
+  },
+  {
+   "n": 9,
+   "id": "ep009",
+   "topic": "Count the Animals",
+   "format": "count",
+   "keyword": "counting for toddlers",
+   "status": "todo"
+  },
+  {
+   "n": 10,
+   "id": "ep010",
+   "topic": "Guess the Sea Animal Shadow",
+   "format": "shadow",
+   "keyword": "sea animals for kids",
+   "status": "published",
+   "series": "Guess with Kiddo",
+   "style": "hook: no intro, 4 rounds, ~63s",
+   "scheduled_for": "2026-10-16T23:26+05:30",
+   "metricool_uuid": "8978194359773908908",
+   "youtube_url": "https://www.youtube.com/shorts/FcHqeV-1RuA"
+  },
+  {
+   "n": 11,
+   "id": "ep011",
+   "topic": "What Do We Wear? (weather clues)",
+   "format": "clues",
+   "keyword": "clothes names for kids",
+   "status": "published",
+   "series": "Guess with Kiddo",
+   "style": "hook: no intro, 4 rounds, ~66s",
+   "scheduled_for": "2026-10-17T10:48+05:30",
+   "metricool_uuid": "-8466288867995006886",
+   "youtube_url": "https://www.youtube.com/shorts/IoETTHns69M"
+  },
+  {
+   "n": 12,
+   "id": "ep012",
+   "topic": "Learn Shapes",
+   "format": "learn",
+   "keyword": "shapes for kids",
+   "status": "todo"
+  },
+  {
+   "n": 13,
+   "id": "ep013",
+   "topic": "Guess the Bug Shadow (insects)",
+   "format": "shadow",
+   "keyword": "insects for kids",
+   "status": "rendered",
+   "series": "Guess with Kiddo",
+   "style": "hook: no intro, 4 rounds, ~65s"
+  },
+  {
+   "n": 14,
+   "id": "ep014",
+   "topic": "Count the Toys",
+   "format": "count",
+   "keyword": "learn numbers for kids",
+   "status": "todo"
+  },
+  {
+   "n": 15,
+   "id": "ep015",
+   "topic": "Mega Quiz #2",
+   "format": "clues",
+   "keyword": "quiz for kids",
+   "status": "todo"
+  },
+  {
+   "n": 16,
+   "id": "ep016",
+   "topic": "Learn Musical Instruments",
+   "format": "learn",
+   "keyword": "musical instruments for kids",
+   "status": "todo"
+  },
+  {
+   "n": 17,
+   "id": "ep017",
+   "topic": "Guess the Farm Animal Shadow",
+   "format": "shadow",
+   "keyword": "farm animals for kids",
+   "status": "todo"
+  },
+  {
+   "n": 18,
+   "id": "ep018",
+   "topic": "Which Sport? (equipment clues)",
+   "format": "clues",
+   "keyword": "sports for kids",
+   "status": "published",
+   "series": "Guess with Kiddo",
+   "style": "hook: no intro, 4 rounds, ~66s",
+   "scheduled_for": "2026-10-19T19:05+05:30",
+   "metricool_uuid": "2936707754849223238",
+   "youtube_url": "https://www.youtube.com/shorts/-3k2MPFwAqw"
+  },
+  {
+   "n": 19,
+   "id": "ep019",
+   "topic": "Count the Sweets",
+   "format": "count",
+   "keyword": "counting game for kids",
+   "status": "todo"
+  },
+  {
+   "n": 20,
+   "id": "ep020",
+   "topic": "Learn Body Parts",
+   "format": "learn",
+   "keyword": "body parts for kids",
+   "status": "todo"
+  },
+  {
+   "n": 21,
+   "id": "ep021",
+   "topic": "Guess the Bird Shadow",
+   "format": "shadow",
+   "keyword": "birds names for kids",
+   "status": "todo"
+  },
+  {
+   "n": 22,
+   "id": "ep022",
+   "topic": "Mega Quiz #3",
+   "format": "shadow",
+   "keyword": "brain games for kids",
+   "status": "todo"
+  },
+  {
+   "n": 23,
+   "id": "ep023",
+   "topic": "Where Does It Go? (room clues)",
+   "format": "clues",
+   "keyword": "things in the house for kids",
+   "status": "todo"
+  },
+  {
+   "n": 24,
+   "id": "ep024",
+   "topic": "Learn Indian Fruits & Vegetables",
+   "format": "learn",
+   "keyword": "fruits and vegetables names",
+   "status": "todo"
+  },
+  {
+   "n": 25,
+   "id": "ep025",
+   "topic": "Count the Vehicles",
+   "format": "count",
+   "keyword": "numbers 1 to 10",
+   "status": "todo"
+  },
+  {
+   "n": 26,
+   "id": "ep026",
+   "topic": "Guess the Jungle Animal Shadow",
+   "format": "shadow",
+   "keyword": "wild animals for kids",
+   "status": "todo"
+  },
+  {
+   "n": 27,
+   "id": "ep027",
+   "topic": "Learn Weather Words",
+   "format": "learn",
+   "keyword": "weather for kids",
+   "status": "todo"
+  },
+  {
+   "n": 28,
+   "id": "ep028",
+   "topic": "Who Eats What? (animal food)",
+   "format": "clues",
+   "keyword": "animals and their food",
+   "status": "todo"
+  },
+  {
+   "n": 29,
+   "id": "ep029",
+   "topic": "Mega Quiz #4",
+   "format": "shadow",
+   "keyword": "guess the picture",
+   "status": "todo"
+  },
+  {
+   "n": 30,
+   "id": "ep030",
+   "topic": "Learn Space Words",
+   "format": "learn",
+   "keyword": "solar system for kids",
+   "status": "todo"
+  }
+ ],
+ "series_abc": {
+  "name": "ABC Game with Kiddo",
+  "format": "letter",
+  "note": "Second series. One part = 4 letters, 2 picture choices per letter, hook style ~60 s.",
+  "plan": [
+   {
+    "id": "abc01",
+    "letters": "A-D",
+    "status": "rendered"
+   },
+   {
+    "id": "abc02",
+    "letters": "E-H",
+    "status": "todo"
+   },
+   {
+    "id": "abc03",
+    "letters": "I-L",
+    "status": "todo"
+   },
+   {
+    "id": "abc04",
+    "letters": "M-P",
+    "status": "todo"
+   },
+   {
+    "id": "abc05",
+    "letters": "Q-T",
+    "status": "todo"
+   },
+   {
+    "id": "abc06",
+    "letters": "U-X",
+    "status": "todo"
+   },
+   {
+    "id": "abc07",
+    "letters": "Y-Z + review",
+    "status": "todo"
+   }
+  ]
+ },
+ "series_doors": {
+  "name": "Pick a Door with Kiddo",
+  "format": "doors",
+  "engine": "python3 engine/doors.py episodes/<file>.json",
+  "why": "Research Oct 2026 (vidIQ): door-choice surprise games are the top-breakout kids Shorts format (NurSure 'What's Behind the Door?' 162M views; 'Don't Pick the Wrong Door' kids games 300-500K views on channels with <500 subs). Winners run 17-37 s. 'choose a door' searches +235% month on month.",
+  "rules": [
+   "3 doors, 2 funny wrong doors + 1 win door; open the win door last (open_order).",
+   "Move the win door's position between episodes (not always door 2).",
+   "Reactions available: sour, hot, stinky, cold, wet, slip, tickle, scared, buzz, bounce, sneeze, float (wrong); win, love (right).",
+   "Each episode teaches 3 words + one describing word each (sour lemon, spicy chili, sweet cake).",
+   "Keep 28-36 s. Title starts 'Don't Pick the Wrong Door!' + 2 emoji, keywords: choose a door, funny kids game.",
+   "Nothing scary: roars and bugs stay silly, never threatening."
   ],
   "plan": [
-    {
-      "n": 1,
-      "id": "ep001",
-      "topic": "Guess the Job (community helpers)",
-      "format": "clues",
-      "keyword": "community helpers for kids",
-      "status": "published"
-    },
-    {
-      "n": 2,
-      "id": "ep002",
-      "topic": "Guess the Animal by its Shadow",
-      "format": "shadow",
-      "keyword": "animal shadow game",
-      "status": "published",
-      "scheduled_for": "2026-10-15T16:00+05:30",
-      "metricool_uuid": "5931635678831266372",
-      "youtube_url": "https://www.youtube.com/shorts/3Jw9jb8cVws"
-    },
-    {
-      "n": 3,
-      "id": "ep003",
-      "topic": "Count the Fruits 1 to 10",
-      "format": "count",
-      "keyword": "counting 1 to 10 for kids",
-      "status": "todo"
-    },
-    {
-      "n": 4,
-      "id": "ep004",
-      "topic": "Learn Vegetable Names",
-      "format": "learn",
-      "keyword": "vegetables names for kids",
-      "status": "todo"
-    },
-    {
-      "n": 5,
-      "id": "ep005",
-      "topic": "Guess the Vehicle by its Shadow",
-      "format": "shadow",
-      "keyword": "vehicles for kids",
-      "status": "rendered",
-      "series": "Guess with Kiddo",
-      "style": "hook: no intro, 4 rounds, ~60s"
-    },
-    {
-      "n": 6,
-      "id": "ep006",
-      "topic": "Who Lives Here? Animal Homes",
-      "format": "clues",
-      "keyword": "animal homes for kids",
-      "status": "published",
-      "series": "Guess with Kiddo",
-      "youtube_url": "https://www.youtube.com/shorts/LrojVmbLoSI"
-    },
-    {
-      "n": 7,
-      "id": "ep007",
-      "topic": "Learn Fruit Names",
-      "format": "learn",
-      "keyword": "fruits names for kids",
-      "status": "todo"
-    },
-    {
-      "n": 8,
-      "id": "ep008",
-      "topic": "Mega Quiz #1",
-      "format": "shadow",
-      "keyword": "guessing game for kids",
-      "status": "todo"
-    },
-    {
-      "n": 9,
-      "id": "ep009",
-      "topic": "Count the Animals",
-      "format": "count",
-      "keyword": "counting for toddlers",
-      "status": "todo"
-    },
-    {
-      "n": 10,
-      "id": "ep010",
-      "topic": "Guess the Sea Animal Shadow",
-      "format": "shadow",
-      "keyword": "sea animals for kids",
-      "status": "published",
-      "series": "Guess with Kiddo",
-      "style": "hook: no intro, 4 rounds, ~63s",
-      "scheduled_for": "2026-10-16T23:26+05:30",
-      "metricool_uuid": "8978194359773908908",
-      "youtube_url": "https://www.youtube.com/shorts/FcHqeV-1RuA"
-    },
-    {
-      "n": 11,
-      "id": "ep011",
-      "topic": "What Do We Wear? (weather clues)",
-      "format": "clues",
-      "keyword": "clothes names for kids",
-      "status": "published",
-      "series": "Guess with Kiddo",
-      "style": "hook: no intro, 4 rounds, ~66s",
-      "scheduled_for": "2026-10-17T10:48+05:30",
-      "metricool_uuid": "-8466288867995006886",
-      "youtube_url": "https://www.youtube.com/shorts/IoETTHns69M"
-    },
-    {
-      "n": 12,
-      "id": "ep012",
-      "topic": "Learn Shapes",
-      "format": "learn",
-      "keyword": "shapes for kids",
-      "status": "todo"
-    },
-    {
-      "n": 13,
-      "id": "ep013",
-      "topic": "Guess the Bug Shadow (insects)",
-      "format": "shadow",
-      "keyword": "insects for kids",
-      "status": "rendered",
-      "series": "Guess with Kiddo",
-      "style": "hook: no intro, 4 rounds, ~65s"
-    },
-    {
-      "n": 14,
-      "id": "ep014",
-      "topic": "Count the Toys",
-      "format": "count",
-      "keyword": "learn numbers for kids",
-      "status": "todo"
-    },
-    {
-      "n": 15,
-      "id": "ep015",
-      "topic": "Mega Quiz #2",
-      "format": "clues",
-      "keyword": "quiz for kids",
-      "status": "todo"
-    },
-    {
-      "n": 16,
-      "id": "ep016",
-      "topic": "Learn Musical Instruments",
-      "format": "learn",
-      "keyword": "musical instruments for kids",
-      "status": "todo"
-    },
-    {
-      "n": 17,
-      "id": "ep017",
-      "topic": "Guess the Farm Animal Shadow",
-      "format": "shadow",
-      "keyword": "farm animals for kids",
-      "status": "todo"
-    },
-    {
-      "n": 18,
-      "id": "ep018",
-      "topic": "Which Sport? (equipment clues)",
-      "format": "clues",
-      "keyword": "sports for kids",
-      "status": "published",
-      "series": "Guess with Kiddo",
-      "style": "hook: no intro, 4 rounds, ~66s",
-      "scheduled_for": "2026-10-19T19:05+05:30",
-      "metricool_uuid": "2936707754849223238",
-      "youtube_url": "https://www.youtube.com/shorts/-3k2MPFwAqw"
-    },
-    {
-      "n": 19,
-      "id": "ep019",
-      "topic": "Count the Sweets",
-      "format": "count",
-      "keyword": "counting game for kids",
-      "status": "todo"
-    },
-    {
-      "n": 20,
-      "id": "ep020",
-      "topic": "Learn Body Parts",
-      "format": "learn",
-      "keyword": "body parts for kids",
-      "status": "todo"
-    },
-    {
-      "n": 21,
-      "id": "ep021",
-      "topic": "Guess the Bird Shadow",
-      "format": "shadow",
-      "keyword": "birds names for kids",
-      "status": "todo"
-    },
-    {
-      "n": 22,
-      "id": "ep022",
-      "topic": "Mega Quiz #3",
-      "format": "shadow",
-      "keyword": "brain games for kids",
-      "status": "todo"
-    },
-    {
-      "n": 23,
-      "id": "ep023",
-      "topic": "Where Does It Go? (room clues)",
-      "format": "clues",
-      "keyword": "things in the house for kids",
-      "status": "todo"
-    },
-    {
-      "n": 24,
-      "id": "ep024",
-      "topic": "Learn Indian Fruits & Vegetables",
-      "format": "learn",
-      "keyword": "fruits and vegetables names",
-      "status": "todo"
-    },
-    {
-      "n": 25,
-      "id": "ep025",
-      "topic": "Count the Vehicles",
-      "format": "count",
-      "keyword": "numbers 1 to 10",
-      "status": "todo"
-    },
-    {
-      "n": 26,
-      "id": "ep026",
-      "topic": "Guess the Jungle Animal Shadow",
-      "format": "shadow",
-      "keyword": "wild animals for kids",
-      "status": "todo"
-    },
-    {
-      "n": 27,
-      "id": "ep027",
-      "topic": "Learn Weather Words",
-      "format": "learn",
-      "keyword": "weather for kids",
-      "status": "todo"
-    },
-    {
-      "n": 28,
-      "id": "ep028",
-      "topic": "Who Eats What? (animal food)",
-      "format": "clues",
-      "keyword": "animals and their food",
-      "status": "todo"
-    },
-    {
-      "n": 29,
-      "id": "ep029",
-      "topic": "Mega Quiz #4",
-      "format": "shadow",
-      "keyword": "guess the picture",
-      "status": "todo"
-    },
-    {
-      "n": 30,
-      "id": "ep030",
-      "topic": "Learn Space Words",
-      "format": "learn",
-      "keyword": "solar system for kids",
-      "status": "todo"
-    }
+   {
+    "id": "door01",
+    "topic": "Yummy or Yucky? lemon (sour), chili (hot), cake (win)",
+    "win_door": 2,
+    "status": "published",
+    "youtube_url": "https://www.youtube.com/shorts/3ieCRkSRPgw",
+    "metricool_uuid": "4514235168457113748"
+   },
+   {
+    "id": "door02",
+    "topic": "Animal Doors: skunk (stinky), frog (bounce), puppy (love)",
+    "win_door": 3,
+    "status": "todo"
+   },
+   {
+    "id": "door03",
+    "topic": "Weather Doors: rain cloud (wet), snowman (cold), rainbow (win)",
+    "win_door": 1,
+    "status": "todo"
+   },
+   {
+    "id": "door04",
+    "topic": "Silly Surprises: banana peel (slip), feather (tickle), gift (win)",
+    "win_door": 2,
+    "status": "todo"
+   },
+   {
+    "id": "door05",
+    "topic": "Jungle Doors: lion (scared), bee (buzz), kitten (love)",
+    "win_door": 3,
+    "status": "todo"
+   },
+   {
+    "id": "door06",
+    "topic": "Kitchen Doors: pepper shaker (sneeze), ice cube (cold), ice cream (win)",
+    "win_door": 1,
+    "status": "todo"
+   },
+   {
+    "id": "door07",
+    "topic": "Party Doors: balloon (float), sour candy (sour), cupcake (win)",
+    "win_door": 3,
+    "status": "todo"
+   },
+   {
+    "id": "door08",
+    "topic": "Farm Doors: skunk (stinky), rooster (scared), bunny (love)",
+    "win_door": 2,
+    "status": "todo"
+   },
+   {
+    "id": "door09",
+    "topic": "Bath Time Doors: bucket of water (wet), soap bubbles (tickle), rubber duck (win)",
+    "win_door": 1,
+    "status": "todo"
+   },
+   {
+    "id": "door10",
+    "topic": "Snack Doors: hot pepper sauce (hot), popcorn that pops (scared), cookie (win)",
+    "win_door": 3,
+    "status": "todo"
+   }
+  ]
+ },
+ "series_family": {
+  "name": "Pick a Door: Adult Life Edition",
+  "audience": "general audience (teens/adults), NOT made for kids, comments on",
+  "channel": "needs its own YouTube channel (not Unique Kiddo)",
+  "host": "emoji faces, no Kiddo",
+  "plan": [
+   {
+    "id": "fam01",
+    "topic": "Monday Edition: 5 AM alarm, 999 emails, day off",
+    "status": "rendered"
+   },
+   {
+    "id": "fam02",
+    "topic": "Food Delivery Edition: cold fries, wrong order, free dessert",
+    "status": "todo"
+   },
+   {
+    "id": "fam03",
+    "topic": "School Edition: pop quiz, group project, snow day",
+    "status": "todo"
+   },
+   {
+    "id": "fam04",
+    "topic": "Phone Edition: 1% battery, cracked screen, free Wi-Fi",
+    "status": "todo"
+   },
+   {
+    "id": "fam05",
+    "topic": "Weekend Edition: chores list, rain on picnic day, nap",
+    "status": "todo"
+   }
+  ]
+ },
+ "series_toons": {
+  "name": "Kiddo Toons",
+  "format": "gag",
+  "engine": "python3 engine/gags.py episodes/<file>.json",
+  "audience": "general audience all-ages slapstick (no 'for kids' wording, no lessons) -> not made for kids, comments on; separate channel from Unique Kiddo",
+  "why": "Oct 2026 outlier research: breakout animated Shorts from <3K-sub channels are 8-16 s, wordless, one gag, motion-heavy, loopable (e.g. penguin-into-sand 16 s 4.4M views on 2.1K subs).",
+  "test": "2 posts/day (12:00 + 19:00 IST) for 14 days; after 48 h read 'Viewed vs swiped away' per Short; drop gag types <60%, double those >75%.",
+  "plan": [
+   {
+    "id": "gag01",
+    "gag": "door",
+    "title": "He Should Have Read the Sign",
+    "status": "published",
+    "youtube_url": "https://www.youtube.com/shorts/_Rofofpb-ZA",
+    "metricool_uuid": "2768231316290358475",
+    "channel": "Unique Kiddo",
+    "made_for_kids": false
+   },
+   {
+    "id": "gag02",
+    "gag": "sneeze",
+    "title": "Worst Sneeze Ever",
+    "status": "scheduled",
+    "scheduled_for": "2026-10-18T12:00+05:30",
+    "metricool_uuid": "-7638493567821263316",
+    "channel": "Unique Kiddo",
+    "made_for_kids": false
+   },
+   {
+    "id": "gag03",
+    "gag": "bubble",
+    "title": "Bubble Gum Went Wrong",
+    "status": "scheduled",
+    "scheduled_for": "2026-10-18T19:00+05:30",
+    "metricool_uuid": "6487886320883287339",
+    "channel": "Unique Kiddo",
+    "made_for_kids": false
+   },
+   {
+    "id": "gag04",
+    "idea": "Kiddo vs a chair that keeps moving when he sits",
+    "status": "todo"
+   },
+   {
+    "id": "gag05",
+    "idea": "Ketchup bottle won't squeeze, then floods the room",
+    "status": "todo"
+   },
+   {
+    "id": "gag06",
+    "idea": "Kiddo tries to catch his falling star, bonks into everything",
+    "status": "todo"
+   },
+   {
+    "id": "gag07",
+    "idea": "Spring on the floor: one tiny hop, launched to the ceiling",
+    "status": "todo"
+   },
+   {
+    "id": "gag08",
+    "idea": "Kiddo stacks blocks perfectly, a fly lands on top",
+    "status": "todo"
+   },
+   {
+    "id": "gag09",
+    "idea": "Ice floor: walk, slide, spin, wall",
+    "status": "todo"
+   },
+   {
+    "id": "gag10",
+    "idea": "Balloon pump: inflates himself instead",
+    "status": "todo"
+   }
   ],
-  "series_abc": {
-    "name": "ABC Game with Kiddo",
-    "format": "letter",
-    "note": "Second series. One part = 4 letters, 2 picture choices per letter, hook style ~60 s.",
-    "plan": [
-      {
-        "id": "abc01",
-        "letters": "A-D",
-        "status": "rendered"
-      },
-      {
-        "id": "abc02",
-        "letters": "E-H",
-        "status": "todo"
-      },
-      {
-        "id": "abc03",
-        "letters": "I-L",
-        "status": "todo"
-      },
-      {
-        "id": "abc04",
-        "letters": "M-P",
-        "status": "todo"
-      },
-      {
-        "id": "abc05",
-        "letters": "Q-T",
-        "status": "todo"
-      },
-      {
-        "id": "abc06",
-        "letters": "U-X",
-        "status": "todo"
-      },
-      {
-        "id": "abc07",
-        "letters": "Y-Z + review",
-        "status": "todo"
-      }
-    ]
-  },
-  "series_doors": {
-    "name": "Pick a Door with Kiddo",
-    "format": "doors",
-    "engine": "python3 engine/doors.py episodes/<file>.json",
-    "why": "Research Oct 2026 (vidIQ): door-choice surprise games are the top-breakout kids Shorts format (NurSure 'What's Behind the Door?' 162M views; 'Don't Pick the Wrong Door' kids games 300-500K views on channels with <500 subs). Winners run 17-37 s. 'choose a door' searches +235% month on month.",
-    "rules": [
-      "3 doors, 2 funny wrong doors + 1 win door; open the win door last (open_order).",
-      "Move the win door's position between episodes (not always door 2).",
-      "Reactions available: sour, hot, stinky, cold, wet, slip, tickle, scared, buzz, bounce, sneeze, float (wrong); win, love (right).",
-      "Each episode teaches 3 words + one describing word each (sour lemon, spicy chili, sweet cake).",
-      "Keep 28-36 s. Title starts 'Don't Pick the Wrong Door!' + 2 emoji, keywords: choose a door, funny kids game.",
-      "Nothing scary: roars and bugs stay silly, never threatening."
-    ],
-    "plan": [
-      {
-        "id": "door01",
-        "topic": "Yummy or Yucky? lemon (sour), chili (hot), cake (win)",
-        "win_door": 2,
-        "status": "published",
-        "youtube_url": "https://www.youtube.com/shorts/3ieCRkSRPgw",
-        "metricool_uuid": "4514235168457113748"
-      },
-      {
-        "id": "door02",
-        "topic": "Animal Doors: skunk (stinky), frog (bounce), puppy (love)",
-        "win_door": 3,
-        "status": "todo"
-      },
-      {
-        "id": "door03",
-        "topic": "Weather Doors: rain cloud (wet), snowman (cold), rainbow (win)",
-        "win_door": 1,
-        "status": "todo"
-      },
-      {
-        "id": "door04",
-        "topic": "Silly Surprises: banana peel (slip), feather (tickle), gift (win)",
-        "win_door": 2,
-        "status": "todo"
-      },
-      {
-        "id": "door05",
-        "topic": "Jungle Doors: lion (scared), bee (buzz), kitten (love)",
-        "win_door": 3,
-        "status": "todo"
-      },
-      {
-        "id": "door06",
-        "topic": "Kitchen Doors: pepper shaker (sneeze), ice cube (cold), ice cream (win)",
-        "win_door": 1,
-        "status": "todo"
-      },
-      {
-        "id": "door07",
-        "topic": "Party Doors: balloon (float), sour candy (sour), cupcake (win)",
-        "win_door": 3,
-        "status": "todo"
-      },
-      {
-        "id": "door08",
-        "topic": "Farm Doors: skunk (stinky), rooster (scared), bunny (love)",
-        "win_door": 2,
-        "status": "todo"
-      },
-      {
-        "id": "door09",
-        "topic": "Bath Time Doors: bucket of water (wet), soap bubbles (tickle), rubber duck (win)",
-        "win_door": 1,
-        "status": "todo"
-      },
-      {
-        "id": "door10",
-        "topic": "Snack Doors: hot pepper sauce (hot), popcorn that pops (scared), cookie (win)",
-        "win_door": 3,
-        "status": "todo"
-      }
-    ]
-  },
-  "series_family": {
-    "name": "Pick a Door: Adult Life Edition",
-    "audience": "general audience (teens/adults), NOT made for kids, comments on",
-    "channel": "needs its own YouTube channel (not Unique Kiddo)",
-    "host": "emoji faces, no Kiddo",
-    "plan": [
-      {
-        "id": "fam01",
-        "topic": "Monday Edition: 5 AM alarm, 999 emails, day off",
-        "status": "rendered"
-      },
-      {
-        "id": "fam02",
-        "topic": "Food Delivery Edition: cold fries, wrong order, free dessert",
-        "status": "todo"
-      },
-      {
-        "id": "fam03",
-        "topic": "School Edition: pop quiz, group project, snow day",
-        "status": "todo"
-      },
-      {
-        "id": "fam04",
-        "topic": "Phone Edition: 1% battery, cracked screen, free Wi-Fi",
-        "status": "todo"
-      },
-      {
-        "id": "fam05",
-        "topic": "Weekend Edition: chores list, rain on picnic day, nap",
-        "status": "todo"
-      }
-    ]
-  },
-  "series_toons": {
-    "name": "Kiddo Toons",
-    "format": "gag",
-    "engine": "python3 engine/gags.py episodes/<file>.json",
-    "audience": "general audience all-ages slapstick (no 'for kids' wording, no lessons) -> not made for kids, comments on; separate channel from Unique Kiddo",
-    "why": "Oct 2026 outlier research: breakout animated Shorts from <3K-sub channels are 8-16 s, wordless, one gag, motion-heavy, loopable (e.g. penguin-into-sand 16 s 4.4M views on 2.1K subs).",
-    "test": "2 posts/day (12:00 + 19:00 IST) for 14 days; after 48 h read 'Viewed vs swiped away' per Short; drop gag types <60%, double those >75%.",
-    "plan": [
-      {
-        "id": "gag01",
-        "gag": "door",
-        "title": "He Should Have Read the Sign",
-        "status": "published",
-        "youtube_url": "https://www.youtube.com/shorts/_Rofofpb-ZA",
-        "metricool_uuid": "2768231316290358475",
-        "channel": "Unique Kiddo",
-        "made_for_kids": false
-      },
-      {
-        "id": "gag02",
-        "gag": "sneeze",
-        "title": "Worst Sneeze Ever",
-        "status": "scheduled",
-        "scheduled_for": "2026-10-18T12:00+05:30",
-        "metricool_uuid": "-7638493567821263316",
-        "channel": "Unique Kiddo",
-        "made_for_kids": false
-      },
-      {
-        "id": "gag03",
-        "gag": "bubble",
-        "title": "Bubble Gum Went Wrong",
-        "status": "scheduled",
-        "scheduled_for": "2026-10-18T19:00+05:30",
-        "metricool_uuid": "6487886320883287339",
-        "channel": "Unique Kiddo",
-        "made_for_kids": false
-      },
-      {
-        "id": "gag04",
-        "idea": "Kiddo vs a chair that keeps moving when he sits",
-        "status": "todo"
-      },
-      {
-        "id": "gag05",
-        "idea": "Ketchup bottle won't squeeze, then floods the room",
-        "status": "todo"
-      },
-      {
-        "id": "gag06",
-        "idea": "Kiddo tries to catch his falling star, bonks into everything",
-        "status": "todo"
-      },
-      {
-        "id": "gag07",
-        "idea": "Spring on the floor: one tiny hop, launched to the ceiling",
-        "status": "todo"
-      },
-      {
-        "id": "gag08",
-        "idea": "Kiddo stacks blocks perfectly, a fly lands on top",
-        "status": "todo"
-      },
-      {
-        "id": "gag09",
-        "idea": "Ice floor: walk, slide, spin, wall",
-        "status": "todo"
-      },
-      {
-        "id": "gag10",
-        "idea": "Balloon pump: inflates himself instead",
-        "status": "todo"
-      }
-    ],
-    "channel": "Unique Kiddo (Anmol's call, Oct 18): gags posted there as not made for kids"
-  }
+  "channel": "Unique Kiddo (Anmol's call, Oct 18): gags posted there as not made for kids"
+ }
 }

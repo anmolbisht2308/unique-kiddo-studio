@@ -1,0 +1,100 @@
+1
+00:00:00,900 --> 00:00:03,102
+Mega quiz time! Who is this shadow?
+
+2
+00:00:03,502 --> 00:00:06,259
+It has big floppy ears and a long, long trunk!
+
+3
+00:00:10,059 --> 00:00:11,483
+Yes! It's an elephant!
+
+4
+00:00:11,983 --> 00:00:13,606
+Say it with me! Elephant!
+
+5
+00:00:16,906 --> 00:00:18,268
+Who is this tiny shadow?
+
+6
+00:00:18,668 --> 00:00:20,826
+It is little and red with black spots!
+
+7
+00:00:24,626 --> 00:00:26,109
+Yes! It's a ladybug!
+
+8
+00:00:26,609 --> 00:00:28,332
+Say it with me! Ladybug!
+
+9
+00:00:31,632 --> 00:00:32,704
+What is this shadow?
+
+10
+00:00:33,104 --> 00:00:35,660
+Three, two, one... it zooms up to space!
+
+11
+00:00:39,460 --> 00:00:40,854
+Yes! It's a rocket!
+
+12
+00:00:41,354 --> 00:00:43,024
+Say it with me! Rocket!
+
+13
+00:00:46,324 --> 00:00:47,388
+Who is this shadow?
+
+14
+00:00:47,788 --> 00:00:50,280
+It lives in the sea and loves to jump and splash!
+
+15
+00:00:54,080 --> 00:00:55,505
+Yes! It's a dolphin!
+
+16
+00:00:56,005 --> 00:00:57,592
+Say it with me! Dolphin!
+
+17
+00:01:00,892 --> 00:01:01,964
+What is this shadow?
+
+18
+00:01:02,364 --> 00:01:05,194
+We wear it to stay warm on cold, snowy days!
+
+19
+00:01:08,994 --> 00:01:10,194
+Yes! It's a coat!
+
+20
+00:01:10,694 --> 00:01:12,004
+Say it with me! Coat!
+
+21
+00:01:15,304 --> 00:01:17,054
+Last one! Who is this shadow?
+
+22
+00:01:17,454 --> 00:01:20,212
+It has humps on its back and walks in the hot desert!
+
+23
+00:01:24,012 --> 00:01:25,288
+Yes! It's a camel!
+
+24
+00:01:25,788 --> 00:01:27,260
+Say it with me! Camel!
+
+25
+00:01:30,260 --> 00:01:33,342
+Wow! You finished the mega quiz! How many did you guess?
+
