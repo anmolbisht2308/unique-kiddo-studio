@@ -484,11 +484,13 @@
       {
         "id": "gag07",
         "idea": "Spring on the floor: one tiny hop, launched to the ceiling",
-        "status": "rendered",
+        "status": "scheduled",
         "gag": "spring",
         "title": "Just One Tiny Hop...",
         "channel": "Unique Kiddo",
-        "made_for_kids": false
+        "made_for_kids": false,
+        "scheduled_for": "2026-10-20T19:00+05:30",
+        "metricool_uuid": "6822496441246697822"
       },
       {
         "id": "gag08",
