@@ -1,0 +1,78 @@
+{
+  "id": "ep023",
+  "format": "clues",
+  "series": "Guess with Kiddo",
+  "title_screen": ["WHAT'S IN", "THE HOUSE?"],
+  "hook_text": "WHAT'S IN THE HOUSE?",
+  "round_word": "ROUND",
+  "intro": [],
+  "think_seconds": 3,
+  "repeat_seconds": 1.2,
+  "bye": false,
+  "items": [
+    {
+      "name": "Bed",
+      "say": "a bed",
+      "emoji": "🛏️",
+      "clues": ["🌙", "😴"],
+      "clue_text": "The moon is up and we feel so sleepy",
+      "ask": "What is it? Can you guess?",
+      "ask_screen": "What\nis it?",
+      "reveal_line": "Yes! A cozy bed! Night night!"
+    },
+    {
+      "name": "Bathtub",
+      "say": "a bathtub",
+      "emoji": "🛁",
+      "clues": ["🫧", "🧼"],
+      "clue_text": "Lots of bubbles and a bar of soap",
+      "ask": "What is it?",
+      "ask_screen": "What\nis it?",
+      "reveal_line": "Yes! A bathtub! Splish, splash!"
+    },
+    {
+      "name": "Sofa",
+      "say": "a sofa",
+      "emoji": "🛋️",
+      "clues": ["📺", "🍿"],
+      "clue_text": "Cartoon time and yummy popcorn",
+      "ask": "What is it?",
+      "ask_screen": "What\nis it?",
+      "reveal_line": "Yes! A soft, comfy sofa!"
+    },
+    {
+      "name": "Toothbrush",
+      "say": "a toothbrush",
+      "emoji": "🪥",
+      "clues": ["🦷", "✨"],
+      "clue_text": "Little teeth that sparkle and shine",
+      "ask": "Last one! What is it?",
+      "ask_screen": "What\nis it?",
+      "reveal_line": "Yes! A toothbrush! Brush, brush!"
+    }
+  ],
+  "outro_screen": "You got them all!\nHow many did\nYOU guess?",
+  "outro": [
+    "Wow! You got them all! How many did you guess?"
+  ],
+  "seo": {
+    "title": "What's in the House? 🛏️🛁 Things in the House for Kids | Guessing Game | Unique Kiddo",
+    "description": "Can your little one guess what's in the house from two clues? 🤔 Look at the clues, think, and shout the answer with Kiddo!\n\nA quick things-in-the-house guessing game for kids. Children learn 4 household words:\n🛏️ Bed (moon + sleepy face)\n🛁 Bathtub (bubbles + soap)\n🛋️ Sofa (TV + popcorn)\n🪥 Toothbrush (teeth + sparkles)\n\nEach round has think time so kids can guess, and a \"say it with me\" pause to practise new English words. Great for toddlers, preschool and kindergarten (ages 2–6).\n\n⭐ Subscribe to Unique Kiddo for more Guess with Kiddo games: animals, vehicles, sports, clothes and more!\n\nVoice: Kokoro TTS (Apache 2.0) · Emoji art: Noto Emoji (Apache 2.0)\n\n#thingsinthehouse #guessinggame #kidslearning",
+    "tags": [
+      "things in the house for kids",
+      "household items for kids",
+      "house vocabulary for kids",
+      "what's in the house",
+      "guess the object",
+      "guessing game for kids",
+      "guess with kiddo",
+      "kids learning videos",
+      "preschool learning",
+      "toddler learning",
+      "learn english for kids",
+      "educational videos for kids",
+      "unique kiddo",
+      "kiddo"
+    ]
+  }
+}

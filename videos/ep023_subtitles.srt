@@ -1,0 +1,68 @@
+1
+00:00:00,900 --> 00:00:03,353
+Look! The moon is up and we feel so sleepy!
+
+2
+00:00:03,753 --> 00:00:05,258
+What is it? Can you guess?
+
+3
+00:00:09,058 --> 00:00:11,044
+Yes! A cozy bed! Night night!
+
+4
+00:00:11,544 --> 00:00:12,959
+Say it with me! Bed!
+
+5
+00:00:16,259 --> 00:00:18,592
+Look! Lots of bubbles and a bar of soap!
+
+6
+00:00:18,992 --> 00:00:19,716
+What is it?
+
+7
+00:00:23,516 --> 00:00:25,590
+Yes! A bathtub! Splish, splash!
+
+8
+00:00:26,090 --> 00:00:27,674
+Say it with me! Bathtub!
+
+9
+00:00:30,974 --> 00:00:33,277
+Look! Cartoon time and yummy popcorn!
+
+10
+00:00:33,677 --> 00:00:34,400
+What is it?
+
+11
+00:00:38,200 --> 00:00:40,173
+Yes! A soft, comfy sofa!
+
+12
+00:00:40,673 --> 00:00:42,272
+Say it with me! Sofa!
+
+13
+00:00:45,572 --> 00:00:47,830
+Look! Little teeth that sparkle and shine!
+
+14
+00:00:48,230 --> 00:00:49,676
+Last one! What is it?
+
+15
+00:00:53,476 --> 00:00:55,584
+Yes! A toothbrush! Brush, brush!
+
+16
+00:00:56,084 --> 00:00:57,757
+Say it with me! Toothbrush!
+
+17
+00:01:00,757 --> 00:01:03,253
+Wow! You got them all! How many did you guess?
+

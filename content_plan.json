@@ -77,9 +77,10 @@
       "topic": "Mega Quiz #1 (Mega Shadow Quiz)",
       "format": "shadow",
       "keyword": "guessing game for kids",
-      "status": "rendered",
+      "status": "published",
       "series": "Guess with Kiddo",
-      "style": "hook: no intro, 6 rounds, ~95s"
+      "style": "hook: no intro, 6 rounds, ~95s",
+      "youtube_url": "https://www.youtube.com/shorts/QhlhQFr4PQo"
     },
     {
       "n": 9,
@@ -213,10 +214,12 @@
     {
       "n": 23,
       "id": "ep023",
-      "topic": "Where Does It Go? (room clues)",
+      "topic": "What's in the House? (room clues)",
       "format": "clues",
       "keyword": "things in the house for kids",
-      "status": "todo"
+      "status": "rendered",
+      "series": "Guess with Kiddo",
+      "style": "hook: no intro, 4 rounds, ~65s"
     },
     {
       "n": 24,
