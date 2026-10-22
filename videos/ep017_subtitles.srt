@@ -1,0 +1,68 @@
+1
+00:00:00,900 --> 00:00:03,495
+Who lives on the farm? Can you guess this shadow?
+
+2
+00:00:03,895 --> 00:00:05,844
+It says moo, and it gives us milk!
+
+3
+00:00:09,644 --> 00:00:10,890
+Yes! It's a cow!
+
+4
+00:00:11,390 --> 00:00:12,726
+Say it with me! Cow!
+
+5
+00:00:16,026 --> 00:00:17,090
+Who is this shadow?
+
+6
+00:00:17,490 --> 00:00:20,189
+It has a round nose and loves to play in the mud!
+
+7
+00:00:23,989 --> 00:00:25,215
+Yes! It's a pig!
+
+8
+00:00:25,715 --> 00:00:27,135
+Say it with me! Pig!
+
+9
+00:00:30,435 --> 00:00:31,498
+Who is this shadow?
+
+10
+00:00:31,898 --> 00:00:34,131
+It has soft, fluffy wool and says baa!
+
+11
+00:00:37,931 --> 00:00:39,139
+Yes! It's a sheep!
+
+12
+00:00:39,639 --> 00:00:41,045
+Say it with me! Sheep!
+
+13
+00:00:44,345 --> 00:00:46,095
+Last one! Who is this shadow?
+
+14
+00:00:46,495 --> 00:00:48,892
+It runs very fast and goes clip clop!
+
+15
+00:00:52,692 --> 00:00:53,973
+Yes! It's a horse!
+
+16
+00:00:54,473 --> 00:00:55,928
+Say it with me! Horse!
+
+17
+00:00:58,928 --> 00:01:01,424
+Wow! You got them all! How many did you guess?
+

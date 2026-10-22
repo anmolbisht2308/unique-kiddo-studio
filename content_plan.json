@@ -164,7 +164,9 @@
       "topic": "Guess the Farm Animal Shadow",
       "format": "shadow",
       "keyword": "farm animals for kids",
-      "status": "todo"
+      "status": "rendered",
+      "series": "Guess with Kiddo",
+      "style": "hook: no intro, 4 rounds, ~63s"
     },
     {
       "n": 18,

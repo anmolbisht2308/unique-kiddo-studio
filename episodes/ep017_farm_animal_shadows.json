@@ -1,0 +1,37 @@
+{
+  "id": "ep017",
+  "format": "shadow",
+  "series": "Guess with Kiddo",
+  "title_screen": ["GUESS THE", "FARM SHADOW!"],
+  "hook_text": "GUESS THE SHADOW!",
+  "round_word": "SHADOW",
+  "intro": [],
+  "think_seconds": 3,
+  "repeat_seconds": 1.2,
+  "bye": false,
+  "items": [
+    {"name": "Cow", "say": "a cow", "emoji": "🐄",
+     "ask": "Who lives on the farm? Can you guess this shadow?",
+     "hint": "It says moo, and it gives us milk!",
+     "ask_screen": "Who is\nthis shadow?"},
+    {"name": "Pig", "say": "a pig", "emoji": "🐖",
+     "ask": "Who is this shadow?",
+     "hint": "It has a round nose and loves to play in the mud!",
+     "ask_screen": "Who is\nthis shadow?"},
+    {"name": "Sheep", "say": "a sheep", "emoji": "🐑",
+     "ask": "Who is this shadow?",
+     "hint": "It has soft, fluffy wool and says baa!",
+     "ask_screen": "Who is\nthis shadow?"},
+    {"name": "Horse", "say": "a horse", "emoji": "🐎",
+     "ask": "Last one! Who is this shadow?",
+     "hint": "It runs very fast and goes clip clop!",
+     "ask_screen": "Who is\nthis shadow?"}
+  ],
+  "outro_screen": "You got them all!\nHow many did\nYOU guess?",
+  "outro": ["Wow! You got them all! How many did you guess?"],
+  "seo": {
+    "title": "Guess the Farm Animal Shadow! 🐄🐖 Farm Animals for Kids | Shadow Game for Kids | Unique Kiddo",
+    "description": "Can your little one guess the farm animal from its shadow? 🤔 Look, listen to the clue, and shout the answer with Kiddo!\n\nA quick farm animals guessing game for kids. Children learn 4 farm animal names:\n🐄 Cow\n🐖 Pig\n🐑 Sheep\n🐎 Horse\n\nEach round has think time so kids can guess, and a \"say it with me\" pause to practise new English words. Great for toddlers, preschool and kindergarten (ages 2–6).\n\n⭐ Subscribe to Unique Kiddo for more Guess with Kiddo games: animals, vehicles, sports, letters and more!\n\nVoice: Kokoro TTS (Apache 2.0) · Emoji art: Noto Emoji (Apache 2.0)\n\n#farmanimalsforkids #shadowgame #kidslearning",
+    "tags": ["farm animals for kids", "farm animals names", "guess the farm animal", "farm animal shadow game", "shadow game for kids", "animal sounds for kids", "guess the shadow", "guessing game for kids", "guess with kiddo", "kids learning videos", "preschool learning", "toddler learning", "learn english for kids", "educational videos for kids", "unique kiddo", "kiddo"]
+  }
+}
