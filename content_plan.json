@@ -164,11 +164,11 @@
       "topic": "Guess the Farm Animal Shadow",
       "format": "shadow",
       "keyword": "farm animals for kids",
-      "status": "scheduled",
+      "status": "rendered",
       "series": "Guess with Kiddo",
       "style": "hook: no intro, 4 rounds, ~63s",
-      "scheduled_for": "2026-10-23T03:18+05:30",
-      "metricool_uuid": "-1359618311858862367"
+      "metricool_uuid": "-1359618311858862367",
+      "note": "Metricool auto-publish 23 Oct 03:18 IST failed: account limit reached"
     },
     {
       "n": 18,
