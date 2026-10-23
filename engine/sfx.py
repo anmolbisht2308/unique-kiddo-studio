@@ -214,7 +214,16 @@ def splat():
     return splash(.45) * 1.2
 
 
-LIB = dict(crash=crash, big_pop=big_pop, chew=chew, stretch=stretch, splat=splat, pop=pop, tick=tick, ding=ding, boing=boing, slide_up=slide_up, slide_down=slide_down, whoosh=whoosh,
+def honk():
+    """squeeze-bulb bike horn: two detuned buzzy tones with a quick pitch squeeze"""
+    t = _t(.42)
+    f = 330 + 60 * np.minimum(1, t / .05) - 25 * t
+    ph = np.cumsum(f) / SR
+    x = np.sign(np.sin(2 * np.pi * ph)) * .5 + np.sign(np.sin(2 * np.pi * ph * 1.26)) * .35
+    return .28 * _lp(x, .35) * np.minimum(1, t / .01) * np.exp(-2.5 * t)
+
+
+LIB = dict(honk=honk, crash=crash, big_pop=big_pop, chew=chew, stretch=stretch, splat=splat, pop=pop, tick=tick, ding=ding, boing=boing, slide_up=slide_up, slide_down=slide_down, whoosh=whoosh,
            creak=creak, drumroll=lambda: drumroll(1.1), drumroll_long=lambda: drumroll(1.7, crash=True),
            trombone=trombone, fanfare=fanfare, sparkle=sparkle, sizzle=sizzle, splash=splash, brrr=brrr,
            pfft=pfft, bonk=bonk, roar=roar, buzz=buzz, float_up=float_up)

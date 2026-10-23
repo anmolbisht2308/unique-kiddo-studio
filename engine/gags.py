@@ -1,7 +1,7 @@
 """Kiddo Toons: wordless 10-12 s slapstick loops (general audience).
 
 Usage:  python3 engine/gags.py episodes/gag01_x.json [--preview t1 t2 ...]
-Episode: {"id": "gag01", "format": "gag", "gag": "door" | "sneeze" | "bubble", "seo": {...}}
+Episode: {"id": "gag01", "format": "gag", "gag": "door" | "sneeze" | "bubble" | "spring" | "chair", "seo": {...}}
 Each gag is a hand-timed script below; the last frame lines up with the first so the Short loops.
 """
 import json, math, os, subprocess, sys
@@ -550,7 +550,217 @@ def gag_spring(tl):
     return frame
 
 
-GAGS = {"door": gag_door, "sneeze": gag_sneeze, "bubble": gag_bubble, "spring": gag_spring}
+# ================================================================== GAG 5: the chair that won't be sat on
+SEATH = 245           # seat height above the floor
+SEATY = FEET - SEATH  # kiddo's feet y when sitting
+CK0, CA, CB, CC = 250, 600, 850, 330
+KS = .78  # kiddo a bit smaller here so the chair reads  # kiddo start, chair spots A/B/C
+WOOD, WOOD_D, WOOD_L = (196, 128, 70), (150, 92, 50), (222, 160, 100)
+
+
+def chair_draw(img, x, t, lift=0.0, lean=0.0, eyes="open", look=(0.0, 0.0), run=False, smirk=False):
+    d = ImageDraw.Draw(img)
+    base = FEET - lift; st = base - SEATH; l = lean * 70
+    ph = math.sin(t * 40) if run else 0.0
+    for lx, top, dk in ((-105, st + 10, True), (105, st + 10, True), (-130, st + 30, False), (130, st + 30, False)):
+        wig = (22 * ph if (lx < 0) == (top > st + 20) else -22 * ph)
+        d.line([(x + lx + l * .3, top), (x + lx + wig, base - (14 if dk else 0))], fill=DARK, width=30)
+        d.line([(x + lx + l * .3, top), (x + lx + wig, base - (14 if dk else 0))], fill=WOOD_D if dk else WOOD, width=20)
+    for px in (-112, 112):  # back posts
+        d.line([(x + px, st), (x + px + l, st - 360)], fill=DARK, width=28)
+        d.line([(x + px, st), (x + px + l, st - 360)], fill=WOOD_D, width=18)
+    d.rounded_rectangle([x - 150 + l, st - 380, x + 150 + l, st - 170], radius=28, fill=WOOD, outline=DARK, width=6)
+    d.rounded_rectangle([x - 125 + l, st - 360, x + 125 + l, st - 330], radius=10, fill=WOOD_L)
+    # face on the backrest
+    ex, ey = x + l, st - 275
+    for sgn in (-1, 1):
+        cx = ex + sgn * 48
+        if eyes == "wink" and sgn < 0 or eyes == "closed":
+            d.arc([cx - 26, ey - 14, cx + 26, ey + 22], 200, 340, fill=DARK, width=7)
+            continue
+        r = 30 if eyes == "wide" else 25
+        d.ellipse([cx - r, ey - r, cx + r, ey + r], fill=(255, 255, 255), outline=DARK, width=5)
+        pr = 9 if eyes == "wide" else 12
+        px_, py_ = cx + look[0] * (r - pr - 3), ey + look[1] * (r - pr - 3)
+        d.ellipse([px_ - pr, py_ - pr, px_ + pr, py_ + pr], fill=DARK)
+    if smirk:
+        d.arc([ex - 40, ey + 20, ex + 50, ey + 70], 10, 160, fill=DARK, width=7)
+    # seat
+    d.rounded_rectangle([x - 165, st - 32, x + 165, st + 6], radius=12, fill=WOOD_L, outline=DARK, width=5)
+    d.rounded_rectangle([x - 170, st, x + 170, st + 38], radius=10, fill=WOOD, outline=DARK, width=5)
+
+
+def arc_pos(q, x0, y0, x1, y1, hgt):
+    return x0 + (x1 - x0) * q, y0 + (y1 - y0) * q - hgt * math.sin(math.pi * q)
+
+
+def gag_chair(tl):
+    T = 12.0
+    tl.vocal(.2, "Hup!", 1.35); tl.fx(.62, "whoosh"); tl.fx(.92, "slide_down"); tl.fx(1.05, "bonk")
+    tl.vocal(2.2, "La la la...", 1.35)
+    tl.fx(3.3, "whoosh"); tl.fx(3.38, "boing"); tl.fx(3.9, "bonk"); tl.fx(3.92, "boing")
+    tl.fx(4.05, "pop"); tl.fx(4.2, "pop")
+    tl.vocal(4.35, "Grrrr!", 1.1)
+    tl.fx(5.0, "creak"); tl.fx(5.35, "whoosh"); tl.fx(5.7, "whoosh")
+    tl.vocal(6.15, "Uh oh.", 1.25)
+    tl.fx(6.5, "slide_down")
+    tl.fx(6.75, "honk"); tl.fx(6.75, "splat"); tl.fx(6.77, "bonk"); tl.fx(6.8, "crash")
+    tl.fx(8.0, "pop")
+    for k in range(4):
+        tl.fx(8.3 + k * .15, "tick")
+    tl.fx(8.9, "whoosh"); tl.fx(9.25, "ding"); tl.vocal(9.35, "Ahhh...", 1.2)
+    tl.fx(9.95, "boing"); tl.fx(10.0, "whoosh"); tl.vocal(10.05, "Waah!", 1.35)
+    tl.fx(10.55, "bonk")
+    tl.fx(11.0, "sparkle"); tl.fx(11.02, "ding")
+    tl.duration = T
+    ANGRY = (235, 50, 45)
+
+    def frame(t):
+        img = Image.new("RGBA", (W, H)); background(img, wall=(206, 232, 246), floor=(220, 186, 146))
+        d = ImageDraw.Draw(img)
+        # a little picture frame on the wall for depth
+        d.rounded_rectangle([110, 520, 330, 700], radius=10, fill=(255, 250, 235), outline=DARK, width=6)
+        R.paste_emoji(img, "🌈", 220, 612, 120)
+        # ------------------------------------------------ chair state
+        cx, clift, clean, ceyes, clook, crun, smirk, cspeed = CA, 0.0, 0.0, "open", (-.8, .2), False, False, 0
+        if t < .62:
+            clook = (-.8, .2) if t < .4 else (-.7, -.3)
+        elif t < .8:
+            q = ease((t - .62) / .18); cx = CA + (CB - CA) * q; clean = -.6 * math.sin(math.pi * q); crun = True; cspeed = 1
+            ceyes = "wide"
+        elif t < 2.1:
+            cx = CB; clook = (0, -.9) if t > 1.4 else (-.8, 0); clift = 6 * abs(math.sin(t * 5)) if t > 1.4 else 0
+        elif t < 3.3:
+            cx = CB; ceyes = "closed" if t > 2.5 else "open"; clook = (-.8, 0)
+        elif t < 3.38:
+            cx = CB; ceyes = "wide"; clook = (-.9, -.3)
+        elif t < 3.9:
+            q = ease((t - 3.38) / .52); cx, cy_ = arc_pos(q, CB, 0, CC, 0, 900); clift = cy_ * -1 if cy_ < 0 else 0
+            clift = 680 * math.sin(math.pi * q); clean = .5 * math.sin(2 * math.pi * q); ceyes = "wide"; crun = True
+        elif t < 5.7:
+            cx = CC; clook = (.9, 0)
+            if 4.0 <= t < 4.35: clift = 40 * abs(math.sin((t - 4.0) * math.pi / .175))
+            if t > 5.35: ceyes = "wide"; clook = (.6, -.9)
+        elif t < 8.3:
+            q = ease_in(seg(t, 5.7, 5.9)); cx = CC - 600 * q; crun = True; cspeed = -1 if t < 5.95 else 0; clean = .6
+        elif t < 8.9:
+            q = (t - 8.3) / .6; cx = -300 + (CC - 140 + 300) * q; clift = 18 * abs(math.sin(q * 4 * math.pi)); crun = True
+            ceyes = "open"; clook = (.9, -.2)
+        elif t < 9.95:
+            q = ease(seg(t, 8.9, 9.05)); cx = CC - 140 + 140 * q
+        elif t < 10.6:
+            u = t - 9.95
+            if u < .12: clift = 70 * math.sin(math.pi * u / .12); clean = -.8 * math.sin(math.pi * u / .12); cx = CC
+            else:
+                q = ease((u - .12) / .48); cx = CC + (CA - CC) * q; crun = True; clean = -.5 * math.sin(math.pi * q); cspeed = 1
+        else:
+            cx = CA; clook = (-.8, .2)
+            if 11.0 <= t < 11.6: ceyes = "wink"; smirk = True
+        # ------------------------------------------------ kiddo state
+        x, y, sx, sy, rot = float(CK0), FEET, 1., 1., 0.
+        P = dict(eyes="happy", mouth="smile", look=(0, 0))
+        shake = 0; dizzy = False; steam = False; speed_v = False; puffs = None
+        if t < .2:
+            q = math.sin(math.pi * .5 * (t / .2)); sy = 1 - .15 * q; sx = 1 + .1 * q
+        elif t < .8:
+            q = ease((t - .2) / .6); x, y = arc_pos(q, CK0, FEET, CA, SEATY, 230)
+            P.update(eyes="happy", mouth="open", arms="up"); sy = 1.08; sx = .95
+        elif t < .92:
+            x, y = CA, SEATY; P.update(eyes="wide", mouth="o", look=(0, .8))
+        elif t < 1.05:
+            x = CA; y = SEATY + (FEET - SEATY) * ease_in((t - .92) / .13); P.update(eyes="wide", mouth="scream", arms="up")
+        elif t < 1.5:
+            x = CA; u = t - 1.05; b = math.exp(-u * 7)
+            sy = 1 - .45 * b; sx = 1 + .35 * b; shake = 7 * b; P.update(eyes="x", mouth="wavy")
+        elif t < 2.1:
+            x = CA; P.update(eyes="squint", mouth="zigzag", look=(.8, 0))
+        elif t < 3.3:
+            q = (t - 2.1) / 1.2; x = CA + 60 * q; y = FEET - 10 * abs(math.sin(t * 8))
+            P.update(eyes="closed", mouth="smile", look=(0, .25)); rot = 5 * math.sin(t * 4)
+        elif t < 3.75:
+            q = ease((t - 3.3) / .45); x, y = arc_pos(q, CA + 60, FEET, CB, SEATY, 190)
+            P.update(eyes="wide", mouth="open", arms="up")
+        elif t < 3.9:
+            x = CB; y = SEATY + (FEET - SEATY) * ease_in((t - 3.75) / .15); P.update(eyes="wide", mouth="scream", arms="up")
+        elif t < 4.3:
+            x = CB; u = t - 3.9; b = math.exp(-u * 8); sy = 1 - .35 * b; sx = 1 + .3 * b
+            P.update(eyes="wide", mouth="o", look=(-.9, 0))
+        elif t < 5.0:
+            x = CB + 6 * math.sin(t * 70); q = seg(t, 4.3, 4.6)
+            P.update(eyes="squint", mouth="zigzag", look=(-.8, 0), body=lerp_col(CORAL, ANGRY, q)); steam = True
+            sx = 1 + .05 * q; sy = 1 + .05 * q
+        elif t < 5.35:
+            x = CB; q = ease((t - 5.0) / .35); sx = 1 + .3 * q; sy = 1 - .38 * q
+            P.update(eyes="squint", mouth="zigzag", look=(-.8, 0), body=ANGRY); steam = True
+        elif t < 5.85:
+            q = ease((t - 5.35) / .5); x = CB + (CC - CB) * q; y = FEET - 520 * math.sin(math.pi * .5 * q)
+            sx = .8; sy = 1.3; P.update(eyes="squint", mouth="open", arms="up", body=lerp_col(ANGRY, CORAL, q))
+        elif t < 6.55:
+            x = CC; y = FEET - 520 + 6 * math.sin((t - 5.85) * 9); sx = 1 - .05 * ease(seg(t, 5.85, 6.0)); sy = 1
+            if t < 6.05: P.update(eyes="squint", mouth="open", arms="up")
+            elif t < 6.15: P.update(eyes="wide", mouth="o", look=(0, .9), arms="up")
+            else: P.update(eyes="normal", mouth="o", look=(0, .25), arms="up")
+        elif t < 6.75:
+            x = CC; y = FEET - 520 + 460 * ease_in((t - 6.55) / .2); sx = .72; sy = 1.38
+            P.update(eyes="wide", mouth="scream", arms="up"); speed_v = True
+        elif t < 8.0:
+            x = CC; u = t - 6.75; wob = math.sin(u * 18) * math.exp(-u * 2)
+            sx = 1.75 + .1 * wob; sy = .22 - .03 * wob; shake = 24 * math.exp(-u * 6); dizzy = u > .25
+            P.update(eyes="dizzy", mouth="wavy"); puffs = u
+        elif t < 8.35:
+            x = CC; q = (t - 8.0) / .35; ov = math.sin(q * math.pi * 2.5) * math.exp(-q * 3)
+            sx = 1.75 - .75 * ease(q * 1.6) - .2 * ov; sy = .22 + .78 * ease(q * 1.6) + .15 * ov
+            P.update(eyes="wide", mouth="o")
+        elif t < 8.9:
+            x = CC; P.update(eyes="normal", mouth="frown", look=(0, .25))
+        elif t < 9.2:
+            x = CC; q = ease(seg(t, 8.9, 9.05)); y = FEET - SEATH * q - 40 * math.sin(math.pi * seg(t, 8.9, 9.2))
+            P.update(eyes="wide", mouth="o", arms="up")
+        elif t < 9.95:
+            x = CC; y = SEATY - 6 * abs(math.sin(t * 9)); P.update(eyes="happy", mouth="smile", arms="down")
+            rot = 4 * math.sin(t * 7)
+        elif t < 10.55:
+            q = ease((t - 9.95) / .6); x, y = arc_pos(q, CC, SEATY, CK0, FEET, 520); rot = -360 * q
+            P.update(eyes="x", mouth="scream", arms="up")
+        elif t < 11.3:
+            u = t - 10.55; b = math.exp(-u * 8); sy = 1 - .3 * b; sx = 1 + .25 * b
+            P.update(eyes="normal", mouth="frown", look=(0, .25))
+            if t > 11.0: P.update(look=(.8, 0))
+        elif t < 11.75:
+            P.update(eyes="normal", mouth="frown", look=(0, .25))
+        # ------------------------------------------------ draw
+        if -250 < cx < W + 250:
+            shadow(img, cx, clift, w=150)
+            chair_draw(img, cx, t, clift, clean, ceyes, clook, crun, smirk)
+        d = ImageDraw.Draw(img)
+        if cspeed:
+            for j in range(5):
+                yy = FEET - 420 + j * 80; x0 = cx - cspeed * 210
+                d.line([(x0, yy), (x0 - cspeed * 300, yy)], fill=(255, 255, 255), width=12)
+        shadow(img, x, max(0, FEET - y), w=150 * sx)
+        kid(img, t, x, y, sx * KS, sy * KS, rot, **P)
+        d = ImageDraw.Draw(img)
+        if speed_v:
+            for j in range(5):
+                xx = x - 160 + j * 80
+                d.line([(xx, y - 700), (xx, y - 1100)], fill=(255, 255, 255), width=12)
+        if steam:
+            for j in range(4):
+                ph = (t * 2.5 + j / 4) % 1; side = -1 if j % 2 else 1
+                px = x + side * (70 + 60 * ph); py = FEET - 168 * K * KS * sy - 30 - 160 * ph; r = 22 + 30 * ph
+                d.ellipse([px - r, py - r, px + r, py + r], fill=(235, 235, 240), outline=(170, 170, 185), width=3)
+        if puffs is not None and puffs < .7:
+            for j in range(8):
+                a = math.pi + j * math.pi / 7; dd = 160 + 520 * puffs; r = 34 * (1 - puffs / .7)
+                px = x + math.cos(a) * dd * 1.2; py = FEET - 20 + math.sin(a) * dd * .35
+                d.ellipse([px - r, py - r, px + r, py + r], fill=(235, 220, 200), outline=(170, 150, 130), width=3)
+        if dizzy:
+            stars_ring(d, x, FEET - 168 * K * KS * sy - 40, t, r=170)
+        return shake_img(img, shake, t)
+    return frame
+
+
+GAGS = {"door": gag_door, "sneeze": gag_sneeze, "bubble": gag_bubble, "spring": gag_spring, "chair": gag_chair}
 
 
 def main(ep_path, preview=None):
