@@ -476,14 +476,14 @@
       {
         "id": "gag04",
         "idea": "Kiddo vs a chair that keeps moving when he sits",
-        "status": "scheduled",
+        "status": "rendered",
         "gag": "chair",
         "title": "He Just Wants to Sit... 😤🪑 #shorts",
         "channel": "Unique Kiddo",
         "made_for_kids": false,
         "length_s": 12.0,
-        "scheduled_for": "2026-10-23T11:00+05:30",
-        "metricool_uuid": "6669744011045063864"
+        "metricool_uuid": "6669744011045063864",
+        "note": "Metricool auto-publish failed 23 Oct 11:00 IST: 'You have reached your Metricool account limit.' (post uuid 6669744011045063864). Upload by hand."
       },
       {
         "id": "gag05",
